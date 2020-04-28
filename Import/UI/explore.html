@@ -5,46 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
+               *{
+     font-family: Arial, Helvetica, sans-serif;
+ }
+  
+ ul#bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  width: 401px; 
+  background-color: #333;
 }
-
-/* Style the links inside the navigation bar */
-.topnav a {
+li {
   float: left;
-  color: #FFFFFF;
+}
+li a {
+  display: block;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #FFFFFF;
-  color: black;
+li a:hover {
+  background-color:  #008B8B;
 }
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #008B8B;
-  color: white;
+li a.active{
+    background-color: #008B8B;
+     color: white;
 }
-
 #box2 {
   position: absolute;
   right: 10px;
   color: #333;
 }
 
-#header {
-  font-size: 40px;
+#mainTitle{
+    font-size: 45px;
+    color: #008B8B;
+    display: inline-block;
+    margin: 10px 5px 10px 10px;
 }
-#NUA {
-  color: #008B8B;
+#underTitle{
+    font-size: 25px;
+    display: inline-block;
+    margin: 10px 5px 10px 10px;
 }
 #p1 {
   color: #333;
@@ -67,27 +72,36 @@
   border-radius: 5px;
 }
 
-#box3 a:hover{
-  background-color: #008B8B;
+#box4 {
+/*comment centrer l'image ? */
 }
 
 #box5 {
-  position: absolute;
-  top: 250px;
-  left: 350px;
   font-size: 20px;
+  display: inline-block;
+  margin-left: 20px;
+  width: auto;
+
 }
 
 #box6 {
-  position: absolute;
-  top: 250px;
-  left: 800px;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 20px;
+}
+.box {
+  display: grid;
+  width: auto;
+  grid-template-columns: 120px 200px 600px;
+  align-items: start;
+  justify-content: space-between;
+  border: 2px solid #333;
+  background-color: rgba(0, 139, 139, 0.37) ;
+  padding: 10px;
 }
 
-#box7 {
-  position: absolute;
-  top: 550px;
-  left: 10px;
+.box:hover{
+    background-color:rgba(0, 139, 139, 0.836) ;
 }
 
     </style>
@@ -95,33 +109,39 @@
 </head>
 <body>
     <div class="topnav">
-        <box id="box1">
-        <a href="#accueil">Accueil</a>
-        <a class="active" href="#explorer">Explorer</a>
-        <a href="#mesFavoris">Mes favoris</a>
-        <a href="#mesProjets">Mes projets</a>
-        </box>
+        <ul id="bar">
+            <li><a class="active" href="#accueil">Accueil</a></li>
+            <li><a href="#explorer">Explorer</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
         <box id="box2">Prénom Nom
         <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="photoDeProfil" width=60px></box>
       </div>
       
-      <div id= header>
-        <p id= "p1"> <strong id= NUA>NUA</strong> - Networking Universitaire Artistique</p>
-      </div>
+     
+      <div id="mainTitle">NUA</div>
+      <div id="underTitle">Networking Universitaire Artistique</div>
+
       <div id= titre>
           <p>Explorer </p> 
       </div>
       
+      <div class="box">
       <box id="box4"> <img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt="photo" width=100px></box>
-      
+    
       <box id="box5">
-       
         <p>Nom, Prénom</p>
         <p>Age</p>
         <p>Profession</p>
         <p>Localité</p>
-
       </box>
+      <box id='box6'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, odio animi sunt nulla hic laboriosam minima quis labore reprehenderit eaque ipsum corporis quos veniam rerum, nam iste sapiente dolore quisquam.
+      </box>
+       </div>
+
+       <!--comment faire de cette bande un modèle qui se réutilise pour d'autres? -->
   
     
 </body>
