@@ -72,9 +72,23 @@ li a.active{
   border-radius: 5px;
 }
 
-#box4 {
-/*comment centrer l'image ? */
+.button {
+  transition-duration: 0.4s;
+  background-color: #333;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  margin: 10px;
 }
+
+.button:hover {
+  background-color: #008B8B;
+  color: white;
+}
+
+
+/*comment centrer l'image ? */
+
 
 #box5 {
   font-size: 20px;
@@ -98,10 +112,12 @@ li a.active{
   border: 2px solid #333;
   background-color: rgba(0, 139, 139, 0.37) ;
   padding: 10px;
+  transition-duration: 0.4s;
 }
 
 .box:hover{
     background-color:rgba(0, 139, 139, 0.836) ;
+    
 }
 
     </style>
@@ -126,6 +142,9 @@ li a.active{
       <div id= titre>
           <p>Explorer </p> 
       </div>
+
+      <button class="button" id="creer"> Créer une annonce</button>
+      <button class="button" id="rechercher">Rechercher </button> <!-- plutôt mette une barre de recherche-->
       
       <div class="box">
       <box id="box4"> <img src="https://tanzolymp.com/images/default-non-user-no-photo-1.jpg" alt="photo" width=100px></box>
