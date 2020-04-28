@@ -1,0 +1,109 @@
+
+
+ul#bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  li a:hover {
+    background-color:  #FFFFFF ;
+    color:  #000000 ;
+  }
+/*Titre & sous-titre*/
+
+#header{
+    height:120px;
+    
+}
+#mainTitle{
+    font-size: 45px;
+    color: #008B8B;
+    display: inline-block;    
+}
+#underTitle{
+    font-size: 25px;
+    color: #333;
+    display: inline-block;
+    margin: 10px 5px 10px 10px;
+}
+#imgmembre{
+    float:right;
+}
+#nouvmemb {
+    background-color: rgb(159, 200, 216);
+    color: #000000; 
+}
+#grillememb {
+    background-color: rgb(159, 200, 216);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 3px;
+    background-color: rgb(159, 200, 216);
+    padding: 3px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 110px;
+    width: 110px;
+    padding: 20px;
+    margin-left: 7px;
+    font-size: medium;
+    text-align: center;
+} 
+ 
+#grillevenmt {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+#evenmt {
+    background-color: rgb(159, 200, 216);
+    font-size: medium;
+    color: #000000;
+  
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 3px;
+    background-color: rgb(159, 200, 216);
+    padding: 3px;
+}
+.grid-item1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 110px;
+    padding: 20px;
+    font-size: medium;
+    
+}
+#nomfav { 
+    float:left;
+}
+#footer {
+    clear: both;
+    background-color: #000000 ;
+    color : #FFFFFF;
+    padding: 10px;
+    text-align: right;
+}
