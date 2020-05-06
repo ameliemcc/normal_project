@@ -9,14 +9,9 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.8.3",
-<<<<<<< HEAD
-    "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
-=======
     "@popperjs/core": "^2.4.0",
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.1",
->>>>>>> amélie
     "meteor-node-stubs": "^1.0.0",
     "popper.js": "^1.16.1"
   },
