@@ -1,6 +1,9 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 // Commentaire d'essai fait par Tinto
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap';
+
 import './main.html';
 
 Template.hello.onCreated(function helloOnCreated() {
