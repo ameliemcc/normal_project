@@ -2,11 +2,19 @@ import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 // Commentaire d'essai fait par Tinto
 import './main.html';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap';
 
-Template.hello.onCreated(function helloOnCreated() {
+
+
+/*Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0
   this.counter = new ReactiveVar(0);
 });
+
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+</button>
 
 Template.hello.helpers({
   counter() {
@@ -19,4 +27,4 @@ Template.hello.events({
     // increment the counter when button is clicked
     instance.counter.set(instance.counter.get() + 1);
   },
-});
+});*/
