@@ -180,6 +180,7 @@
   flex-flow: column wrap;
   height: 100px;
   width: 100px;
+  border:px solid;
 }
 .info{
   width: 100px;
