@@ -170,3 +170,24 @@
     grid-gap: 3px;
     padding: 3px;
     }       
+/* Ajout page Favoris de Gavin*/
+
+.box{
+  align-self: center;
+}
+#contact{
+  display: flex;
+  flex-flow: column wrap;
+  height: 100px;
+  width: 100px;
+}
+.info{
+  width: 100px;
+  height: 150px;
+}
+.annonce{
+  display: flex;
+  align-content: center;
+  width: 550px;
+  height: 100px;
+}
