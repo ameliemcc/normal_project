@@ -1,9 +1,13 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 // Commentaire d'essai fait par Tinto
+
 import './main.html';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
+import '../imports/startup/accounts-config.js';
+import '../imports/ui/compteuti/body.js';
+
 
 
 
