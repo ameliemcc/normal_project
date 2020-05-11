@@ -4,8 +4,9 @@ import './body.css';
 import '../explore/explore.js';
 import '../favorisgavin/favoris.js';
 import '../accueil/accueil.js';
+import '../accueilMembres/accueilM.js'
 import '../../../lib/routing.js';
-
+import '../templates/header.html';
 
 import { Template } from 'meteor/templating';
 
@@ -24,4 +25,9 @@ Template.app_body.events({
         event.preventDefault();
         FlowRouter.go('accueil');
     },
+    'click #accueilM'(event){
+        event.preventDefault();
+        FlowRouter.go('accueilM');
+    },
+
 });

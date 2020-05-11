@@ -1,11 +1,10 @@
 <template name="app_body">
-
-    <h1>uh</h1>
-
+    {{> Template.dynamic template=top}}
  <div class="btn-group">
-    <button id="explorer">Explorer</button>
-    <button id="favoris">Favoris</button>
     <button id="accueil">Accueil</button> 
+    <button id="explorer">Explorer</button>
+    <button id="favoris"> Mes favoris</button>
+    <button id="accueilM">Accueil membres</button>
 </div>
     {{> Template.dynamic template=main}} <!-- area for you to render content into-->
 </template>
