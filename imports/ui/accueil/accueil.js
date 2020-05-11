@@ -1,1 +1,1 @@
-document.write('accueil');
+import './accueil.html';

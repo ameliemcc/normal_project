@@ -1,25 +1,27 @@
 //corps de l'aplication, template
 import './body.html';
-import '../explore/explore.html';
-import '../favorisgavin/favoris.html';
+import './body.css';
+import '../explore/explore.js';
+import '../favorisgavin/favoris.js';
 import '../accueil/accueil.js';
 import '../../../lib/routing.js';
-import './main.html';
-import '../imports/ui/body/body.js';
-import '../imports/ui/body/body.html';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap';
+
 
 import { Template } from 'meteor/templating';
 
+
 //route pour aller sur 'explorer'
-Template.app_body.event({
+Template.app_body.events({
     'click #explorer'(event){
         event.preventDefault();
-        FlowRouter.go('explorer');
+        FlowRouter.go('explore');
     },
     'click #favoris'(event){
         event.preventDefault();
         FlowRouter.go('favoris');
+    },
+    'click #accueil'(event){
+        event.preventDefault();
+        FlowRouter.go('accueil');
     },
 });

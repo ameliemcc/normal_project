@@ -1,2 +1,2 @@
-
-import '../explore.html';
+import './explore.css';
+import './explore.html';

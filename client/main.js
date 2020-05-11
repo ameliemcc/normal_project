@@ -1,1 +1,2 @@
-import '../imports/ui/body.js';
+import '../imports/ui/body/body.js';
+import './main.html';
