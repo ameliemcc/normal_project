@@ -1,83 +1,24 @@
-/* toute cette partie n'est pas utile car on se trouve dans un fichier.css
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<style>
-/* id = #, ne s'utilise qu'une seule fois dans la page
-
- et class  = . , pour plusieurs éléments
- 
- "chaque id doit avoir une valeur propre ou unique dans une page. 
- En revanche, on va pouvoir attribuer la même valeur à plusieurs 
- attributs class différents. */
-
-/*appliqué à tout le document*/
- *{
-     font-family: Arial, Helvetica, sans-serif;
-     font-size: medium;
- }
-
- /*barre de navigation
- je ne sais pas comment faire pour que ces propriétés ne s'appliquent
- que au li de la barre de navigation et pas à toute la page sans mettre 
- un id dans chaque <li id'bar'> 
- Est ce que c'est possible?*/
- ul#bar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color:  #008B8B;
-}
-
-/*Titre & sous-titre*/
-#mainTitle{
-    font-size: 45px;
-    color: #008B8B;
-    display: inline-block;
-    margin: 10px 5px 10px 10px;
-}
-#underTitle{
-    font-size: 25px;
-    display: inline-block;
-    margin: 10px 5px 10px 10px;
-}
-/*</style>
-
-<body>
-
-    <ul id="bar">
-        <li><a class="active" href="#accueil">Accueil</a></li>
-        <li><a href="#explorer">Explorer</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    
-      
-    
-    <div id="mainTitle">NUA</div>
-    <div id="underTitle">Networking Universitaire Artistique</div>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis necessitatibus a magni facilis enim. Facere iusto laudantium obcaecati odit ratione sunt omnis commodi ducimus voluptates, laborum et aliquid soluta consequatur.</p>
-    */
+body {
+    padding: 10px;
+    font-family: sans-serif;
+  }
+  
+  .btn-group button { 
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none;
+  }
+  
+  .btn-group:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  

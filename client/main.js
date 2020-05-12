@@ -6,7 +6,7 @@ import './main.html';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 import '../imports/startup/accounts-config.js';
-import '../imports/ui/compteuti/body.js';
+import '../imports/ui/compteuti/connexion.js';
 
 
 
@@ -32,3 +32,5 @@ Template.hello.events({
     instance.counter.set(instance.counter.get() + 1);
   },
 });*/
+import '../imports/ui/body/body.js';
+import './main.html';
