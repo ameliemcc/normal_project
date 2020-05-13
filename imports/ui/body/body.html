@@ -1,13 +1,14 @@
 <template name="app_body">
- <div class="btn-group">
-    <button id="explorer">Explorer</button>
-    <button id="favoris"> Mes favoris</button>
-    <button id="accueilM">Accueil membres</button>
-    {{> Template.dynamic template=top}}
-</div>
+    <div id='head'>
+        <div class="btn-group">
+            <button id="explorer">Explorer</button>
+            <button id="favoris"> Mes favoris</button>
+        </div>
+    
+        {{> Template.dynamic template=top}}
+    </div>
+
     {{> Template.dynamic template=main}} 
-    <h1>
-        2020
-    </h1>
+  
     <!-- area for you to render content into-->
 </template>
