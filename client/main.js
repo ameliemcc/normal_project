@@ -9,8 +9,6 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import './main.html';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
-import '../imports/startup/accounts-config.js';
-import '../imports/ui/compteuti/connexion.js';
 
 
 /* Template.hello.onCreated(function helloOnCreated() {
@@ -35,3 +33,5 @@ Template.hello.events({
   },
 }); */
 import '../imports/ui/body/body.js';
+// eslint-disable-next-line import/no-unresolved
+import '../templates/creer.html';
