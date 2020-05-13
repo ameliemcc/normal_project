@@ -1,8 +1,7 @@
 //corps de l'aplication, template
 import './body.html';
 import './body.css';
-import '../explore/explore.js';
-import '../favorisgavin/favoris.js';
+import '../explorer/explore.js';
 import '../accueilMembres/accueilM.js'
 import '../../../lib/routing.js';
 import '../templates/header.html';
