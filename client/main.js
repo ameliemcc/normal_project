@@ -9,6 +9,7 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import './main.html';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
+import '../imports/ui/templates/creer.html';
 
 
 /* Template.hello.onCreated(function helloOnCreated() {
