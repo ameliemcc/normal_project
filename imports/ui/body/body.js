@@ -5,6 +5,7 @@ import '../explorer/explore.js';
 import '../accueilMembres/accueilM.js';
 import '../../../lib/routing.js';
 import '../templates/header.html';
+import '../templates/creer.html';
 
 
 import { Template } from 'meteor/templating';

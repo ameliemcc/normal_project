@@ -34,4 +34,3 @@ Template.hello.events({
 }); */
 import '../imports/ui/body/body.js';
 // eslint-disable-next-line import/no-unresolved
-import '../templates/creer.html';
