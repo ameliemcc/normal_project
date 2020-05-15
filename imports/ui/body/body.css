@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<style>
+
 /* id = #, ne s'utilise qu'une seule fois dans la page
 
  et class  = . , pour plusieurs éléments
@@ -64,7 +64,7 @@ li a:hover {
    margin: 10px 5px 10px 10px;
 }
 
-/*</style>
+/*
 
 <body>
 
