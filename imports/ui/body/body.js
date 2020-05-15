@@ -2,6 +2,7 @@
 import './body.html';
 import './body.css';
 import '../accueil/accueil.js';
+import '../favoris/favoris.js'
 import '../../../lib/routing.js';
 import '../templates/header.html';
 
