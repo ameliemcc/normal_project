@@ -1,11 +1,13 @@
-/* Add a black background color to the top navigation */
+/*Header*/
+
+/* Ajouter un fond gris à la top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
-  width: 401px; 
-} 
+  width: 401px; /* Ne pas modifier ce nombre, il est calculer au pixel près ! */
+}
 
-/* Style the links inside the navigation bar */
+/* Donne du style au lien dans la barre de navigation */
 .topnav a {
   float: left;
   color: #FFFFFF;
@@ -13,32 +15,47 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 23.55px;
+  background-color: #333;
 }
 
-/* Change the color of links on hover */
+/* Placer la barre de navigation dans l'angle en haut à gauche */
+#box1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+/* Changer la couleur de lien quand hover */
 .topnav a:hover {
   background-color: #FFFFFF;
   color: black;
 }
 
-/* Add a color to the active/current link */
+/* Ajouter une couleur au lien actif */
 .topnav a.active {
   background-color: #008B8B;
   color: white;
 }
 
+/* Placer le nom de l'utilisateur en haut à droite */
 #box2 {
   position: absolute;
-  right: 10px;
+  right: 80px;
   color: #333;
 }
 
-#header {
+/* Placer la photo de l'utilisateur en haut à droite */
+#box3 {
+  position: absolute; 
+  right: 10px;
+}
+/* Ajouter le style pour le titre et le sous-titre */
+#titre {
   font-size: 40px;
 }
 #NUA {
   color: #008B8B;
 }
-#p1 {
+#soustitre {
   color: #333;
 }
