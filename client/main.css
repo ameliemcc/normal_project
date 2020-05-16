@@ -12,8 +12,17 @@
     float: left;
     clear: both;
   }
-  
-  .btn-group button:not(:last-child) {
+  .btn-group button:hover{
+    background-color: rgba(0, 139, 139, 0.37);
+  }
+  .btn-group{
+    float: left;
+  }
+
+  .btn-group button{
+    border: 3px solid black;
+  }
+  /* .btn-group button:not(:last-child) {
     border-right: none;
   }
   
@@ -22,6 +31,7 @@
     clear: both;
     display: table;
   }
+ 
   
   /*Ce fichier est le CSS pour la page NUA Accueil Membres, fait par Tinto, mis ici par Amélie*/
 /* Add a black background color to the top navigation */
