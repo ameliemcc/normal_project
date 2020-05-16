@@ -67,8 +67,8 @@
 #head{
   border: black 1px;
   display: block;
-
 }
+
 #NUA {
   color: #008B8B;
 }
@@ -81,8 +81,8 @@
   float: left;
   font-size: medium;
   color: #000000;
-  
 }
+
 #grillememb {
   width: 727px;
   font-size: 30px;
@@ -118,7 +118,6 @@
   float: right;
   font-size: medium;
   color: #000000;
-
 }
 
 .grid-container1 {
@@ -150,8 +149,8 @@
   padding: 10px;
   text-align: right;
 }
-/* Spécial Mes favoris */
 
+/* Spécial Mes favoris */
 #grillefav {
   font-size: 30px;
   font-weight: bold;
@@ -201,9 +200,9 @@
   grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 3px;
   padding: 3px;
-  }       
-/* Ajout page Favoris de Gavin*/
+  }    
 
+/* Ajout page Favoris de Gavin*/
 .box{
 align-self: center;
 }
@@ -304,17 +303,13 @@ li a.active{
   color: white;
 }
 
-
 /*comment centrer l'image ? */
-
-
 #box5 {
   font-size: 20px;
   display: inline-block;
   margin-left: 20px;
   width: auto;
   color: #008B8B;
-
 }
 
 #box6 {
@@ -336,7 +331,6 @@ li a.active{
 
 .box:hover{
     background-color:rgba(0, 139, 139, 0.836) ;
-    
 }
 .no-gutters {
   margin-right: 0;
