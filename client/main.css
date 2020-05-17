@@ -1,42 +1,38 @@
-body {
-  padding: 20px; /*plus d'espace necessaire*/
-  font-family: sans-serif;
-}
 p{
-  font-size: 13px;
+    font-size: 13px;
 }
 .br{
-  margin-bottom: 2 px;
+    margin-bottom: 2 px;
 }
 .contfav{
-  padding:0;
+    padding:0;
 }
 .contann{
-  border: 2px solid black;
-  overflow-y:scroll;
-  margin-bottom: 3px;
+    border: 2px solid black;
+    overflow-y:scroll;
+    margin-bottom: 3px;
 }
 .matdiv{
-  float:left;
+    float:left;
 }
 .butclass{
-  box-shadow: 5px 5px 0 black;
+    box-shadow: 5px 5px 0 black;
 }
 .colon{
-  text-align: bottom;  
+    text-align: bottom;  
 }
 .size{
-  height:30px;
-  font-size: 40px;
+    height:30px;
+    font-size: 40px;
 }
 .listdiv{
-  float:left;
-  font-size: 11px;
-  padding:0 ;
-  list-style-type: none;
+    float:left;
+    font-size: 11px;
+    padding:0 ;
+    list-style-type: none;
 }
 .classul{
-  list-style-type: none;
-  padding:0;
-  font-size: 13px;
+    list-style-type: none;
+    padding:0;
+    font-size: 13px;
 }
