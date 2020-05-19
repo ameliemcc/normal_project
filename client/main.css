@@ -29,6 +29,11 @@
   color: black;
 }
 
+.topnav button #profil{
+  float: right;
+
+}
+
 /* Add a color to the active/current link */
 .topnav button.active {
   background-color: #008B8B;
