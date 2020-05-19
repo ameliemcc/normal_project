@@ -212,7 +212,9 @@
                 </div>  
                   
                 <ul class="listdiv">
-                    <li>Prenom nom</li>
+                    {{#each surname}}
+                        {{> task}}
+                    {{/each}}
                     <li>Age</li> 
                     <li>Profession</li>
                     <li>Localité</li>
@@ -235,7 +237,9 @@
                 </div>  
                   
                 <ul class="listdiv">
-                    <li>Prenom nom</li>
+                    {{#each surname}}
+                        {{> task}}
+                    {{/each}}
                     <li>Age</li> 
                     <li>Profession</li>
                     <li>Localité</li>
@@ -254,6 +258,8 @@
         </div>
     
     </div>
-    
-       
+           
     </body>
+    <template name="task">
+        <li>{{text}}</li>
+    </template>
