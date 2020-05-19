@@ -9,7 +9,7 @@
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
-  overflow: hidden;
+ 
 
 }
 
@@ -17,7 +17,6 @@
 .topnav button {
   color: #FFFFFF;
   float: left;
-  text-align: center;
   padding: 10px 13px;
   text-decoration: none;
   font-size: 17px;
@@ -243,7 +242,7 @@ li a.active{
 }
 
 #mainTitle{
-    font-size: 45px;
+    font-size: 30px;
     color: #008B8B;
     display: inline-block;
     margin: 10px 5px 10px 10px;
