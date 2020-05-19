@@ -1,0 +1,109 @@
+<template class="Creercompte">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="creer.css">
+      <div id="mainTitle">NUA</div>
+      <div id="underTitle">Networking Universitaire Artistique</div>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+       crossorigin="anonymous">
+    </head>
+    
+    <body>
+      <div class="d-flex">
+          <div>
+              <h3>Créer un Compte</h3>
+          </div>
+          <div class="d-flex -">
+              <p>champs obligatoires <span class="text-danger">*</span></p>
+          </div>
+      </div>
+      <div class="d-flex align-items-end justify-content-end">
+       <div class="d-flex align-items-end justify-content-end">Photo de profil</div>
+        <div>
+          <img src="https://plus.maths.org/issue42/outerspace/square.png" 
+          alt="photoDeProfil" width=100px> 
+          <input type="button" value="ajouter">
+        </div> 
+      </div>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label for="nom">Nom<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="nom">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="prenom">Prénom<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="prenom">
+          </div>
+        </div><br>
+        <div class="form-inline">
+          <div class="form-group col-md-3">
+            <label for="inputEmail4">Adresse e-mail<span class="text-danger">*</span></label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputPassword4">Mot de passe<span class="text-danger">*</span></label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+        </div><br>
+        <div class="form-inline">
+          <div class="form-group col-md-3">
+            <label for="localite">Localité<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="localite">
+          </div>
+          <div class="form-group col-sm-1">
+            <label for="npa">NPA<span class="text-danger">*</span></label>
+            <input type="number" class="form-control" id="npa" min="1000">
+          </div>
+        </div><br>
+        <div class="form-inline">
+          <div class="form-group col-md-2">
+            <label for="profesison">Profession<span class="text-danger">*</span></label>
+            <select id="profession" class="form-control">
+              <option selected>Profession</option>
+              <option>Graphiste</option>
+              <option>cadreur</option>
+              <option>scenariste</option>
+              <option>real</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="sexe">Sexe<span class="text-danger">*</span></label>
+            <select id="sexe" class="form-control">
+              <option selected></option>
+              <option>femme</option>
+              <option>homme</option>
+              <option>autre</option>
+            </select>
+          </div>
+        </div><br>
+      <div class="form-inline">
+        <label for="example-date-input" class="col-2 col-form-label">Date de naissance<span class="text-danger">*</span></label>
+        <div class="col-md-2.5">
+          <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+        </div>
+      </div><br>
+      <div></div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Biographie</label>
+      <textarea placeholder="Donner d'information utile pour les personnes qui consulteraient votre compte (motivation, parcours, formation....)"
+       class="form-control col-md-6" id="exampleFormControlTextarea1" rows="6"></textarea>
+        </div>
+      <div class="form-group inline">
+        <label for="basic-url">Piece jointes</label>
+        <div class="input-group input-group-sm mb-3 w-25">
+          <input type="text" class="form-control" placeholder="URL" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+        <div class="input-group input-group-sm mb-3 w-25">
+          <input type="text" class="form-control" placeholder="URL" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+        <div class="input-group input-group-sm mb-3 w-25">
+          <input type="text" class="form-control" placeholder="URL" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
+      </form>    
+    </body>
+    
+    </template>
