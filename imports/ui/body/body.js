@@ -5,6 +5,7 @@ import '../favoris/favoris.js'
 import '../../../lib/routing.js';
 import '../templates/header.html';
 import '../profil/profil.js';
+import '../login/login.js';
 
 import { Template } from 'meteor/templating';
 
@@ -21,6 +22,10 @@ Template.app_body.events({
     'click #profil'(event){
         event.preventDefault();
         FlowRouter.go('profil');
+    },
+    'click #login'(event){
+        event.preventDefault();
+        FlowRouter.go('login');
     },
 
 });
