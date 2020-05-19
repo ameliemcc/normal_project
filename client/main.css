@@ -3,52 +3,36 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  .btn-group button { 
-    background-color: white;
-    border: 1px solid black;
-    color: black;
-    padding: 10px 24px;
-    cursor: pointer;
-    float: left;
-    clear: both;
-  }
-  
-  .btn-group button:not(:last-child) {
-    border-right: none;
-  }
-  
-  .btn-group:after {
-    content: '';
-    clear: both;
-    display: table;
-  }
+
   
   /*Ce fichier est le CSS pour la page NUA Accueil Membres, fait par Tinto, mis ici par Amélie*/
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
   overflow: hidden;
-  width: 401px; 
+
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
+.topnav button {
   color: #FFFFFF;
+  float: left;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 13px;
   text-decoration: none;
   font-size: 17px;
+  background-color: transparent;
+  border: transparent;
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #FFFFFF;
+.topnav button:hover {
+  background-color: #008B8B;
   color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+.topnav button.active {
   background-color: #008B8B;
   color: white;
 }
@@ -289,7 +273,7 @@ li a.active{
   text-align: center;
   border-radius: 5px;
 }
-
+/*
 .button {
   transition-duration: 0.4s;
   background-color: #333;
@@ -302,7 +286,7 @@ li a.active{
 .button:hover {
   background-color: #008B8B;
   color: white;
-}
+}*/
 
 
 /*comment centrer l'image ? */
