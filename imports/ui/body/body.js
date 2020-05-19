@@ -24,3 +24,4 @@ Template.app_body.events({
     },
 
 });
+

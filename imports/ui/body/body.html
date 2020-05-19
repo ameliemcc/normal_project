@@ -1,20 +1,22 @@
 <template name="app_body">
-    <div id='head'>
-        <div class="topnav">
-        <box id="box1">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <button id="accueil"><i class="fa fa-fw fa-home"></i>&nbsp;Accueil</button>
-            <button id="favoris"><i class="fa fa-fw fa-heart"></i> &nbsp;Mes favoris</button>
-            <button id="profil"><i class="fa fa-fw fa-user"></i>&nbsp;Mon profil</button>
-        </box>
-     
-    </div>
     <header>
         <div id= titre>
             <p id="mainTitle">NUA</p>
           <p id="underTitle">Networking Universitaire Artistique</p>
         </div>
       </header>
+    <div id='head'>
+        <div class="topnav">
+        <box id="box1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <button class="btn" id="accueil"><i class="fa fa-fw fa-home"></i>&nbsp;Accueil</button>
+            <button  class="btn" id="favoris"><i class="fa fa-fw fa-heart"></i> &nbsp;Mes favoris</button>
+            <button  class="btn" id="profil"><i class="fa fa-fw fa-user"></i>&nbsp;Mon profil</button>
+        </box>
+     
+    </div>
+
+ 
         {{> Template.dynamic template=top}}
    
     </div>

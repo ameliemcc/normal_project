@@ -9,8 +9,7 @@
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
- 
-
+  height: 80px;
 }
 
 /* Style the links inside the navigation bar */
@@ -36,6 +35,8 @@
   color: white;
 }
 
+
+
 #box2 {
   position: absolute;
   right: 10px;
@@ -45,12 +46,11 @@
 #header {
   font-size: 40px;
   float: left;
-  clear: both;
+
 }
 #head{
   border: black 1px;
   display: block;
-
 }
 #NUA {
   color: #008B8B;
@@ -251,6 +251,7 @@ li a.active{
     font-size: 25px;
     display: inline-block;
     margin: 10px 5px 10px 10px;
+    color: #333;
 }
 #p1 {
   color: #333;
@@ -259,6 +260,9 @@ li a.active{
 #titre {
     font-size: 40px;
     font-weight: bold;
+    padding: none;
+    
+    height: 60px;
 }
 
 .modifier{
