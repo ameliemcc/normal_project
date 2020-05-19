@@ -1,12 +1,23 @@
 <template name="app_body">
     <div id='head'>
-        <div class="btn-group">
-            <button id="accueil">Accueil</button>
-            <button id="favoris"> Mes favoris</button>
-        </div>
-        {{> Template.dynamic template=top}}
-    </div>
+        <div class="topnav">
+        <box id="box1">
+            <button id="accueil"><i class="fa fa-fw fa-home"></i>&nbsp;Accueil</button>
+            <button id="favoris"><i class="fa fa-fw fa-heart"></i> &nbsp;Mes favoris</button>
+            <button id="profil"><i class="fa fa-fw fa-user"></i>&nbsp;Mon profil</button>
+        </box>
+    
+            <box id="box2">Prénom Nom
+            <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="photoDeProfil" width=60px></box>
+        <box id="box2"> <p id=prenomNom>Prénom Nom</p>
+        </box>
+        <box id="box3"> <img src="https://plus.maths.org/issue42/outerspace/square.png"     alt="photoDeProfil" width=60px> </box>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    </div>
+        {{> Template.dynamic template=top}}
+   
+    </div>
     {{> Template.dynamic template=main}} 
   
     <!-- area for you to render content into-->
