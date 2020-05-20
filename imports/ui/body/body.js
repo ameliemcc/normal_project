@@ -6,6 +6,7 @@ import '../../../lib/routing.js';
 import '../templates/header.html';
 import '../profil/profil.js';
 import '../login/login.js';
+import { FlowRouter } from 'meteor/kadira:flow-router';
 
 import { Template } from 'meteor/templating';
 

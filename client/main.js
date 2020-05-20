@@ -8,3 +8,4 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 import './main.css';
+import '../import/ui/body/body.js'
