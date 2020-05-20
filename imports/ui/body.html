@@ -9,20 +9,14 @@
     
     <!--Start definition section Annonces-->
     
-    <div class="contann container">
-    
-        
+    <div class="contann container">     
         
         <h4>Annonces</h4>
         <br>
-    
-        
+            
         {{#each annonces}}
             {{>annonce}}
-        {{/each}}
-    
-    
-        
+        {{/each}}       
 
     </div>
     
@@ -49,10 +43,10 @@
             </div>  
               
             <ul class="listdiv">
-                <li>{{text}}</li>
-                <li>Age</li> 
-                <li>Profession</li>
-                <li>Localité</li>
+                <li>{{nom}}</li>
+                <li>{{age}}</li> 
+                <li>{{profess}}</li>
+                <li>{{localité}}</li>
             </ul>
 
             <div class="d-flex">
@@ -96,7 +90,7 @@
             </div>
             <div  class="col-md-6" >
                 <p>
-                    {{titre}}:{{corps}}
+                    {{titre}} : {{corps}}
                 </p> 
     
             </div>
