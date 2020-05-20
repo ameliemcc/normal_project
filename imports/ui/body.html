@@ -28,37 +28,15 @@
         
         <div class="line row">
             {{#each surname}}
-                    {{> task}}
+                    {{> nomprof}}
             {{/each}}
         </div>
     
     </div>
            
     </body>
-    <template name="task">
-        <div  class="col-md-2" >
-                
-            <div>
-                <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="photoDeProfil" width=130px>
-            </div>  
-              
-            <ul class="listdiv">
-                <li>{{nom}}</li>
-                <li>{{age}}</li> 
-                <li>{{profess}}</li>
-                <li>{{localité}}</li>
-            </ul>
 
-            <div class="d-flex">
-                <span class="material-icons">
-                    bookmark_border
-                </span>
-                <span class="material-icons">
-                    chat_bubble_outline
-                </span>
-            </div>
-        </div>
-    </template>
+    <!--Start definition template Annonces-->
 
     <template name="annonce">
 
@@ -101,5 +79,30 @@
             </div>
         </div>
     
+    </template>
+    <!--Start definition template Profils--> 
 
+    <template name="nomprof">
+        <div  class="col-md-2" >
+                
+            <div>
+                <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="photoDeProfil" width=130px>
+            </div>  
+              
+            <ul class="listdiv">
+                <li>{{nom}}</li>
+                <li>{{age}}</li> 
+                <li>{{profess}}</li>
+                <li>{{localité}}</li>
+            </ul>
+
+            <div class="d-flex">
+                <span class="material-icons">
+                    bookmark_border
+                </span>
+                <span class="material-icons">
+                    chat_bubble_outline
+                </span>
+            </div>
+        </div>
     </template>
