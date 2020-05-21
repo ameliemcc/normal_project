@@ -10,7 +10,9 @@
             <div id="underTitle">Nouveaux membres</div> 
             <br>
             <input type="text" placeholder="Rechercher">
-
+            {{#each element}}
+            {{> membre_body}}
+            {{/each}}
             <div class="container">
                 <div class="row">
                   <div class="col-sm">
