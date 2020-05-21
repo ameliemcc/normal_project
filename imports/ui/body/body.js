@@ -3,7 +3,6 @@ import './body.html';
 import '../accueil/accueil.js';
 import '../favoris/favoris.js';
 import '../../../lib/routing.js';
-import '../templates/header.html';
 import '../profil/profil.js';
 import '../login/login.js';
 import { FlowRouter } from 'meteor/kadira:flow-router';
