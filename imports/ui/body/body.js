@@ -5,6 +5,7 @@ import '../favoris/favoris.js';
 import '../../../lib/routing.js';
 import '../profil/profil.js';
 import '../login/login.js';
+import '../templates/creer.js';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
 import { Template } from 'meteor/templating';
@@ -27,6 +28,9 @@ Template.app_body.events({
         event.preventDefault();
         FlowRouter.go('login');
     },
+    'click #creation'(event){
+        event.preventDefault();
+        FlowRouter.go('creation');
+    },
 
 });
-
