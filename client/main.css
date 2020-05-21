@@ -11,6 +11,11 @@
   height: 80px;
 }
 
+#user{
+  display: inline-block;
+  float: inline-end;
+}
+
 /* Style the links inside the navigation bar */
 .topnav button {
   color: #FFFFFF;
@@ -48,7 +53,7 @@
 }
 
 #header {
-  font-size: 40px;
+  font-size: 80px;
   float: left;
 
 }
@@ -246,15 +251,19 @@ li a.active{
 }
 
 #mainTitle{
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
     color: #008B8B;
     display: inline-block;
-    margin: 10px 5px 10px 10px;
+    margin: 10px 5px 20px 5px;
+    padding-bottom: 40px;
 }
 #underTitle{
     font-size: 25px;
+    font-weight: bold;
     display: inline-block;
-    margin: 10px 5px 10px 10px;
+    margin: 10px 5px 20px 5px;
+    padding-bottom: 40px;
     color: #333;
 }
 #p1 {
@@ -262,10 +271,7 @@ li a.active{
 }
 
 #titre {
-    font-size: 40px;
-    font-weight: bold;
-    padding: none;
-    
+    padding: 10px;
     height: 60px;
 }
 

@@ -2,21 +2,30 @@
     <header>
         <div id= titre>
             <p id="mainTitle">NUA</p>
-          <p id="underTitle">Networking Universitaire Artistique</p>
+            <p id="underTitle">Networking Universitaire Artistique</p>
+          <div id="user">
+            {{#if currentUser}}
+            Bienvenue {{utilisateur}} !
+            <button id="logout">Déconnexion</button>
+            {{else}}
+            <button id="login">Connexion</button>
+            <button id="creation">Créer un compte</button>
+            {{/if}}
+          </div>
         </div>
+
       </header>
     <div id='head'>
         <div class="topnav">
-        <box id="box1">
+            <box>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <button id="accueil"><i class="fa fa-fw fa-home"></i>&nbsp;Accueil</button>
-            <button id="favoris"><i class="fa fa-fw fa-heart"></i> &nbsp;Mes favoris</button>
+            <button id="favvoris"><i class="fa fa-fw fa-heart"></i> &nbsp;Mes favoris</button>
             <button id="profil"><i class="fa fa-fw fa-user"></i>&nbsp;Mon profil</button>
-            <button id="login"><i class="fa fa-fw fa-user"></i>&nbsp;login</button>
-            <button id="creation"><i class="fa fa-fw fa-user"></i>&nbsp;Creer Compte</button>
         </box>
-     
     </div>
+
+  
 
  
         {{> Template.dynamic template=top}}
