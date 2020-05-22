@@ -53,13 +53,11 @@ Template.app_body.events({
 
   'click #submit'(event) {
     event.preventDefault();
-    // let nom = document.getElementById('nom').value;
-    // let prenom = document.getElementById('prenom').value;
     const email = document.getElementById('inputEmail4').value;
     const mdp = document.getElementById('inputPassword4').value;
     const mdpCheck = document.getElementById('inputPasswordCheck').value;
-    // let localite = document.getElementById('localite').value;
-    //  let npa = document.getElementById('npa').value;
+    let localite = document.getElementById('localite').value;
+    let npa = document.getElementById('npa').value;
     const profession = document.getElementById('profession').value;
     const sexe = document.getElementById('sexe').value;
     //  let date = document.getElementById('example-date-input').value;
