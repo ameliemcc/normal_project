@@ -12,181 +12,40 @@
     </head>
     <body>
         
-        <!--Start definition of the menu bar and header/title section -->     
-        
-        
-    
-    <!--Start definition section Annonces-->
+        <!--Start body Favoris-->
             
-    <!--<div id=grillefav>-->
-        
-    <h2>Mes Favoris</h2>
-               
-    <h3>Annonces</h3>
-        
-    
-    
-    
-    <div id="contact">
-        <span class="material-icons">
-                bookmark
-        </span>
-        <span class="material-icons">
-                chat_bubble
-        </span>
-            
-        <box class="box">
-                <img src="https://plus.maths.org/issue42/outerspace/square.png" 
-                alt="photoDeProfil" width=60px>
-        </box>
-                        
-        <div class="info">
-                <p2>Prenom nom</p2>
-                <p2>Age</p2> 
-                <p2>Profession</p2>
-                <p2>Localité</p2>
+        <div class="contfav container">
+            <h3>Mes Favoris</h3>
+            <br>
         </div>
+        
+        <!--Start definition section Annonces-->
+        
+        <div class="contann container">     
             
-        <div class="annonce">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quasi dolorem vel voluptatem excepturi aperiam,
-                reprehenderit itaque veniam velit esse ratione iste,
-                officiis iusto doloribus unde quidem quibusdam impedit enim voluptates!
-                </p> 
-        </div>
-                       
-    </div>
-    
-    <div id="contact">
-        <span class="material-icons">
-                bookmark
-        </span>
-        <span class="material-icons">
-                chat_bubble
-        </span>
-            
-        <box class="box">
-                <img src="https://plus.maths.org/issue42/outerspace/square.png" 
-                alt="photoDeProfil" width=60px>
-        </box>
-                        
-        <div class="info">
-                <p2>Prenom nom</p2>
-                <p2>Age</p2> 
-                <p2>Profession</p2>
-                <p2>Localité</p2>
-        </div>
-            
-        <div class="annonce">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quasi dolorem vel voluptatem excepturi aperiam,
-                reprehenderit itaque veniam velit esse ratione iste,
-                officiis iusto doloribus unde quidem quibusdam impedit enim voluptates!
-                </p> 
-        </div>
-                    
-    </div>
-        
-    <!--End definition section evènements-->
-    
-    <!--Start definition section nouveaux membres-->
-           
-    
-    <div id="grillefav">
-        
-        <h3>Profils</h3>
-    </div>
-        
-    <div class="grid-contfav">
-        
-            <div class="grid-itemfav">
+            <h4>Annonces</h4>
+            <br>
                 
-                <p1>
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                    <br />
-                    Nom Prénom
-                    <br>
-                    Age
-                    <br>
-                    Profession
-                    Localité
-                </p1> 
+            {{#each annonces}}
+                {{>annonce}}
+            {{/each}}       
     
-            </div> 
-            <div class="grid-itemfav">
-                <p1>
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                    <br />
-                    Nom Prénom
-                    <br>
-                    Age
-                    <br>
-                    Profession
-                    Localité
-                </p1>
+        </div>
+        
+        <!--Start definition section Profils-->
+        
+        <div class="contann container">
             
-            </div> 
-            <div class="grid-itemfav">
+            <h4>Profils</h4>
             
-                <p1>
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                    <br />
-                    Nom Prénom
-                    <br>
-                    Age
-                    <br>
-                    Profession
-                    Localité
-    
-                </p1>
-            
-            </div> 
-            <div class="grid-itemfav">
-            
-                <p1>
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                    <br />
-                    Nom Prénom
-                    <br>
-                    Age
-                    <br>
-                    Profession
-                    Localité
-                </p1>
-            
-            </div> 
-            <div class="grid-itemfav">
-            
-                <p1>
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                    <br />
-                    Nom Prénom
-                    <br>
-                    Age
-                    <br>
-                    Profession
-                    Localité
-                </p1>
-            
-            </div> 
-          
-            <div class="grid-itemfav">
-            
-                <p1>
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                    <br />
-                    Nom Prénom
-                    <br>
-                    Age
-                    <br>
-                    Profession
-                    Localité
-                </p1>
-            
+            <div class="line row">
+                {{#each surname}}
+                        {{> nomprof}}
+                {{/each}}
             </div>
-    </div>
+        
+        </div>  
+    
         
     <!--End definition section nouveaux membres-->
         <div id="footer">
