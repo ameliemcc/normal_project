@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
  
-import './body.html';
-import {Annonces} from '../api/annonces.js'
+import './bodyT.html';
+import {Annonces} from '../api/annoncesT.js'
 Template.body.helpers({
   
   surname :[
