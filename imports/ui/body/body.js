@@ -34,13 +34,25 @@ Template.app_body.events({
     event.preventDefault();
     FlowRouter.go('profil');
   },
-  'click #login'(event) {
+  'click #connexion'(event) {
     event.preventDefault();
-    FlowRouter.go('login');
+    FlowRouter.go('connexion');
   },
   'click #logout'(event) {
     event.preventDefault();
     Meteor.logout();
+  },
+  'click #login'(event) {
+    event.preventDefault();
+    let email = document.getElementById('adressemail').value;
+    let mdp = document.getElementById('motdepasse').value;
+    Meteor.loginWithPassword(email, mdp, (error) => {
+      if (error){
+        alert(error.message)
+      }else{
+        setTimeout(() => FlowRouter.go('accueil'), 200);
+      }
+    });
   },
   'click #creation'(event) {
     event.preventDefault();
