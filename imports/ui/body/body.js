@@ -46,7 +46,7 @@ Template.app_body.events({
     event.preventDefault();
     FlowRouter.go('creation');
   },
-  'click #creer'(event) {
+  'click #nvlleAnnonce'(event) {
     event.preventDefault();
     FlowRouter.go('annonces');
   },
