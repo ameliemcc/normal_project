@@ -1,11 +1,8 @@
 import { Template } from 'meteor/templating';
-import {Annonces} from '../../api/annonces.js'
-
-import '../templates/annonce_grid.html'
-import '../templates/profils_grid.html'
-import './favoris.html'
-
-Template.favoris.helpers({
+ 
+import './bodyT.html';
+import {Annonces} from '../api/annoncesT.js'
+Template.body.helpers({
   
   surname :[
     {nom:"Jacinto Fernandez", age:"63 ans", profess:"Etudiant", localité: "Yverdon"},
