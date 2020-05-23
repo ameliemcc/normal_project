@@ -419,12 +419,11 @@ p{
 .butclass{
   box-shadow: 5px 5px 0 black;
 }
+.size{
+  height:15px; 
+}
 .colon{
   text-align: bottom;  
-}
-.size{
-  height:30px;
-  font-size: 40px;
 }
 .listdiv{
   float:left;
