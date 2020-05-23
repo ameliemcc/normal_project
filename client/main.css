@@ -1,26 +1,69 @@
+/* BARRE DE NAVIGATION */
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  height: 80px;
+}
+
+#user{
+  display: inline-block;
+  float: inline-end;
+}
+
+/* Style the links inside the navigation bar */
+.topnav button {
+  color: #FFFFFF;
+  float: left;
+  padding: 10px 13px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: transparent;
+  border: transparent;
+}
+
+/* Change the color of links on hover */
+.topnav button:hover {
+  background-color: #008B8B;
+  color: black;
+}
+
+.topnav button #profil{
+  float: right;
+
+}
+
+/* Add a color to the active/current link */
+.topnav button.active {
+  background-color: #008B8B;
+  color: white;
+}
+
+/* FIN DE LA BARRE DE NAVIGATION */
+
 * {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  /* PAGE ACCUEIL */
-  #boxRechercher{
-    position: absolute;
-    left: 820px;
-    top: -115px;
-  }
 
- #motsCles{
+/* PAGE ACCUEIL */
+#boxRechercher{
+  position: absolute;
+  left: 820px;
+  top: -115px;
+}
+
+#motsCles{
   border-radius: 5px;
   border-color: #333;
- }
+}
 
 #boutonRechercher{
-border-radius: 5px;
-border-color: #333;
-position: absolute;
-right: -120px;
- }
+  border-radius: 5px;
+  border-color: #333;
+  position: absolute;
+  right: -120px;
+}
   
 #boutonRechercher:hover{
   background-color: #008B8B;
@@ -43,7 +86,7 @@ right: -120px;
   align-items: flex-start;
 }
 .box:hover{
-    background-color: #008B8B ;
+  background-color: #008B8B ;
 }
 .no-gutters {
   margin-right: 0;
@@ -95,50 +138,29 @@ right: -120px;
   top: 380px;
   left: 0px;
 }
+/* FIN DE LA PAGE ACCUEIL */
 
 
-
-
-
-  /*Ce fichier est le CSS pour la page NUA Accueil Membres, fait par Tinto, mis ici par Amélie*/
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  height: 80px;
+/* PAGE MES FAVORIS */
+#mesFavoris{
+  font-size: 25px;
+  position: absolute;
+  top: 250px;
+  left: 28px;
 }
 
-#user{
-  display: inline-block;
-  float: inline-end;
+#annoncesEtProfils{
+  position: relative;
+  top: 70px;
+  left: -37px;
 }
 
-/* Style the links inside the navigation bar */
-.topnav button {
-  color: #FFFFFF;
-  float: left;
-  padding: 10px 13px;
-  text-decoration: none;
-  font-size: 17px;
-  background-color: transparent;
-  border: transparent;
+#footer{
+  position: relative;
+  bottom: -50px;
 }
 
-/* Change the color of links on hover */
-.topnav button:hover {
-  background-color: #008B8B;
-  color: black;
-}
-
-.topnav button #profil{
-  float: right;
-
-}
-
-/* Add a color to the active/current link */
-.topnav button.active {
-  background-color: #008B8B;
-  color: white;
-}
+/* FIN DE LA PAGE MES FAVORIS */
 
 
 
@@ -151,8 +173,8 @@ right: -120px;
 #header {
   font-size: 80px;
   float: left;
-
 }
+
 #head{
   border: black 1px;
   display: block;
@@ -395,24 +417,41 @@ li a.active{
   color: white;
 }*/
 
-/*comment centrer l'image ? */
-#box5 {
+/* PAGE MON PROFIL */ 
+#boxInformationsPersonnelles {
   font-size: 20px;
   display: inline-block;
   margin-left: 20px;
   width: auto;
-  color: #008B8B;
+  color: #333;
+  position: absolute; 
+  top: 200px; 
+  left: 0px;
 }
 
-#box6 {
+#boxLiensEtPiecesJointes {
   font-size: 20px;
   display: inline-block;
   margin-left: 20px;
+  position: absolute;
+  top: 200px;
+  left: 600px;
 }
 
+#boxMaBiographie{
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 20px;
+  position: absolute;
+  top: 650px;
+  left: 0px;
+}
+
+/* FIN DE LA PAGE MON PROFIL */
 
 
-/*login*/
+
+/* PAGE LOGIN */
 .user_card {
   height: 400px;
   width: 350px;
@@ -428,7 +467,6 @@ li a.active{
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
-
 }
 .form_container {
   margin-top: 100px;
@@ -460,10 +498,12 @@ li a.active{
   box-shadow: none !important;
   outline: 0px !important;
 }
-
 #ml-2{
   color: #333;
 }
+
+
+/* TOUT LE CSS CI-DESSOUS DOIT ETRE TRIE ET DEPLACER VERS LA SECTION DE SA PAGE CORRESPONDANTE */
 
 /* ajout CSS favori Tinto*/
 p{
