@@ -1,224 +1,55 @@
 <template name="accueil">
 
 <body>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-
+    
     <div class="container">
         <div class="row">
-          <div class="col-sm">
-            <input type="text" placeholder="Mots-clés...">
-            <input id="boutonRechercher" type="submit" value="Rechercher">
-            <br>
-            <div id="underTitle">Nouveaux membres</div> 
-
-            <div class="container">
-                <div class="row">
-                  <div class="col-sm">
-                    <div class="box">
-                        <p1>
-                            <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                            <br />
-                            Nom Prénom
-                            <br>
-                            Age
-                            <br>
-                            Profession
-                            Localité
-                        </p1> 
-                        <span class="material-icons">
-                        bookmark
-                        </span>
-                    </div> 
-                  </div>
-                  <div class="col-sm">
-                    <div class="box">
-                        <p1>
-                            <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                            <br />
-                            Nom Prénom
-                            <br>
-                            Age
-                            <br>
-                            Profession
-                            Localité
-                        </p1> 
-                        <span class="material-icons">
-                            bookmark
-                        </span>
-                    </div> 
-                  </div>
-                </div>
-              </div>
-          
-
-          </div>
-          <div class="col-sm">
-              <div id="underTitle">Annonces récentes</div>
-            
-              <button class="button" id="nvlleAnnonce"> Créer une annonce</button>
-              <div class="grid-item1">
-                <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="100px" width="100px">
-                <div id=gridevnmt>
-                    <h3>EVENEMENT 3</h3>
-                    <br>
-                    <p1>Texte</p1>
-                    <p1>Texte</p1>
-                    <p1>Texte</p1>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-
-       <!--comment faire de cette bande un modèle qui se réutilise pour d'autres? -->
-       <div id="nouvmemb">
-
-        <div id="grillememb">Nouveaux membres</div>
-    
-        <div class="grid-container">
-        
-            <div class="grid-item">
-                <p1>
-                    
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                    <br />
-                    Nom Prénom
-                    <br>
-                    Age
-                    <br>
-                    Profession
-                    Localité
-                </p1> 
-                <span class="material-icons">
-                    bookmark
-                </span>
-            </div> 
-            <div class="grid-item">
-                <p1>
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                    <br />
-                    Nom Prénom
-                    <br>
-                    Age
-                    <br>
-                    Profession
-                    Localité
-                </p1>
-                <span class="material-icons">
-                 bookmark
-                </span>
-            </div> 
-            <div class="grid-item">
-            
-                <p1>
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                    <br />
-                    Nom Prénom
-                    <br>
-                    Age
-                    <br>
-                    Profession
-                    Localité
-                </p1>
-                <span class="material-icons">
-                    bookmark
-                </span>
-            </div> 
-            <div class="grid-item">
-            
-                <p1>
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                    <br />
-                    Nom Prénom
-                    <br>
-                    Age
-                    <br>
-                    Profession
-                    Localité
-                </p1>
-                <span class="material-icons">
-                    bookmark
-                </span>
-            </div> 
-            <div class="grid-item">
-            
-                <p1>
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                    <br />
-                    Nom Prénom
-                    <br>
-                    Age
-                    <br>
-                    Profession
-                    Localité
-                </p1>
-                <span class="material-icons">
-                    bookmark
-                </span>
-            </div> 
-            <div class="grid-item">
-            
-                <p1>
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                    <br />
-                    Nom Prénom
-                    <br>
-                    Age
-                    <br>
-                    Profession
-                    Localité
-                </p1>
-                <span class="material-icons">
-                    bookmark
-                </span>
-            </div> 
-            
-        </div>
-        
-    </div>
-    <div id="evenmt">
+            <div class="col-sm">
                 
-        <div id=grillevenmt>Evènements</div>
-    
-            <div class="grid-container1">
-        
-                <div class="grid-item1">
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="100px" width="100px">
-                    <div id=gridevnmt>
-                        EVENEMENT 1
-                        <br>
-                        <p1>Texte</p1>
-                        <p1>Texte</p1>
-                        <p1>Texte</p1>
-                    </div>  
-                </div> 
-                <div class="grid-item1">
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="100px" width="100px">
-                    <div id=gridevnmt>
-                        EVENEMENT 2
-                        <br>
-                        <p1>Texte</p1>
-                        <p1>Texte</p1>
-                        <p1>Texte</p1>
-                    </div>
-                </div>
-                <div class="grid-item1">
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="100px" width="100px">
-                    <div id=gridevnmt>
-                        <h3>EVENEMENT 3</h3>
-                        <br>
-                        <p1>Texte</p1>
-                        <p1>Texte</p1>
-                        <p1>Texte</p1>
-                    </div>
-                </div>
-        
-        
+                <input type="text" placeholder="Mots-clés...">
+                <input id="boutonRechercher" type="submit" value="Rechercher">
+                
             </div>
-
+            <div class="col-sm">
+            
+                <button class="button" id="nvlleAnnonce"> Créer une annonce</button>
+                    
+          </div>
+        </div>     
+        
+        
+    </div>
+    <!--Start definition section Annonces-->
+        
+    <div class="contann container">     
+            
+        <h4>Annonces</h4>
+                     
+        {{#each annonces}}
+            {{>nannonce}}
+        {{/each}}       
 
     </div>
+    
+    <!--Start definition section Profils-->
+    
+    <div class="contann container">
+        
+        <h4>Profils</h4>
+        
+        <div class="line row">
+            {{#each surname}}
+                    {{>nnomprof}}
+            {{/each}}
+        </div>
+    
+    </div>  
+
+    
+<!--End definition section nouveaux membres-->
+    <div id="footer">
+        Copyright &copy; 2020 Groupe 1
+    </div> 
+
 </body>
 </template>
