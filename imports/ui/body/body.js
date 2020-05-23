@@ -34,17 +34,9 @@ Template.app_body.events({
     event.preventDefault();
     FlowRouter.go('profil');
   },
-  'click #login'(event) {
-    event.preventDefault();
-    FlowRouter.go('login');
-  },
   'click #logout'(event) {
     event.preventDefault();
     Meteor.logout();
-  },
-  'click #creation'(event) {
-    event.preventDefault();
-    FlowRouter.go('creation');
   },
   'click #nvlleAnnonce'(event) {
     event.preventDefault();
