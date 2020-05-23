@@ -3,24 +3,25 @@
     <template name="nomprof">
         <div  class="col-md-2" >
                 
-            <div>
+            <div  class="col-md-2" >
                 <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="photoDeProfil" width=130px>
-            </div>  
-              
-            <ul class="listdiv">
-                <li>{{nom}}</li>
-                <li>{{age}}</li> 
-                <li>{{profess}}</li>
-                <li>{{localité}}</li>
-            </ul>
+            </div>             
+            <div  class="col-md-10" >
+                <ul class="listdiv">
+                    <li>{{nom}}</li>
+                    <li>{{age}}</li> 
+                    <li>{{profess}}</li>
+                    <li>{{localité}}</li>
+                </ul>
 
-            <div class="d-flex">
-                <span class="material-icons">
-                     
-                </span>
-                <span class="material-icons favdiv">
-                    favorite
-                </span>
+                <div class="d-flex">
+                    <span class="material-icons">
+                        
+                    </span>
+                    <span class="material-icons favdiv">
+                        favorite
+                    </span>
+                </div>
             </div>
         </div>
     </template>
