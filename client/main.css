@@ -426,19 +426,23 @@ p{
   text-align: bottom;  
 }
 .listdiv{
-  float:left;
+  display:inline-flex;
+  flex-direction: column;
   font-size: 11px;
   padding:0 ;
   list-style-type: none;
+  border: 2px solid black;
 }
 .classul{
   list-style-type: none;
   padding:0;
+  margin:0;
   font-size: 10px;
   font-weight: bold;
+  line-height: 0.75;
 }
 .favdiv{
-  padding-left:  10px;
+  float:right;
 }
 /*ajout pout page create annonce*/
 .contfavann{
