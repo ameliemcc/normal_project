@@ -1,3 +1,5 @@
+import {Flowrouter} from "meteor/kadira:flow-router"
+
 import "/1.html";
 
 'click #login'(event) {
@@ -9,3 +11,4 @@ import "/1.html";
         event.preventDefault();
         FlowRouter.go('creation');
 };
+

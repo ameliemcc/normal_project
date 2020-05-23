@@ -2,8 +2,104 @@
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  /* PAGE ACCUEIL */
+  #boxRechercher{
+    position: absolute;
+    left: 820px;
+    top: -115px;
+  }
+
+ #motsCles{
+  border-radius: 5px;
+  border-color: #333;
+ }
+
+#boutonRechercher{
+border-radius: 5px;
+border-color: #333;
+position: absolute;
+right: -120px;
+ }
   
-  
+#boutonRechercher:hover{
+  background-color: #008B8B;
+}
+
+#nouveauxMembres{
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  left: -57px;
+}
+
+.box {
+  border: 2px solid #008B8B;
+  background-color: white(0, 139, 139, 0.37) ;
+  padding: 10px;
+  transition-duration: 0.4s;
+  height: auto;
+  width: 220px;
+  align-items: flex-start;
+}
+.box:hover{
+    background-color: #008B8B ;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#boxNouveauxMembres1{
+  position: absolute;
+  top: 40px;
+  left: -70px;
+}
+
+#boxNouveauxMembres2{
+  position: absolute;
+  top: 40px;
+  left: 0px;
+}
+
+#annoncesRecentes{
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#nvlleAnnonce{
+  border-radius: 5px;
+  border-color: #333;
+  position: absolute;
+  top: 5px;
+  left: 250px;
+}
+#nvlleAnnonce:hover{
+  background-color: #008B8B;
+}
+
+#boxAnnoncesRecentes1{
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+#boxAnnoncesRecentes2{
+  position: absolute;
+  top: 220px;
+  left: 0px;
+}
+#boxAnnoncesRecentes3{
+  position: absolute;
+  top: 380px;
+  left: 0px;
+}
+
+
+
+
+
   /*Ce fichier est le CSS pour la page NUA Accueil Membres, fait par Tinto, mis ici par Amélie*/
 /* Add a black background color to the top navigation */
 .topnav {
@@ -265,9 +361,7 @@ li a.active{
     margin: 10px 5px 20px 5px;
     padding-bottom: 40px;
     color: #333;
-}
-#p1 {
-  color: #333;
+  
 }
 
 #titre {
@@ -316,23 +410,7 @@ li a.active{
   margin-left: 20px;
 }
 
-/*utilisé pour accueil : */
-.box {
-  border: 2px solid #333;
-  background-color: rgba(0, 139, 139, 0.37) ;
-  padding: 10px;
-  transition-duration: 0.4s;
-  height: auto;
-  width: 220px;
-  align-items: flex-start;
-}
-.box:hover{
-    background-color:rgba(0, 139, 139, 0.836) ;
-}
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
+
 
 /*login*/
 .user_card {
