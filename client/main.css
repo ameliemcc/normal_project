@@ -1,41 +1,469 @@
+* {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /*Ce fichier est le CSS pour la page NUA Accueil Membres, fait par Tinto, mis ici par Amélie*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  height: 80px;
+}
+
+#user{
+  display: inline-block;
+  float: inline-end;
+}
+
+/* Style the links inside the navigation bar */
+.topnav button {
+  color: #FFFFFF;
+  float: left;
+  padding: 10px 13px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: transparent;
+  border: transparent;
+}
+
+/* Change the color of links on hover */
+.topnav button:hover {
+  background-color: #008B8B;
+  color: black;
+}
+
+.topnav button #profil{
+  float: right;
+
+}
+
+/* Add a color to the active/current link */
+.topnav button.active {
+  background-color: #008B8B;
+  color: white;
+}
+
+
+
+#box2 {
+  position: absolute;
+  right: 10px;
+  color: #333;
+}
+
+#header {
+  font-size: 80px;
+  float: left;
+
+}
+#head{
+  border: black 1px;
+  display: block;
+}
+
+#NUA {
+  color: #008B8B;
+}
+#p1 {
+  color: #333;
+}
+#nouvmemb {
+  clear: both;
+  width: 727px;
+  float: left;
+  font-size: medium;
+  color: #000000;
+}
+
+#grillememb {
+  width: 727px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 270px;
+  grid-gap: 3px;
+  padding: 3px;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  height: 170px;
+  width: 120px;
+  padding: 20px;
+  margin-left: 7px;
+  font-size: medium;
+  text-align: left;
+} 
+
+#grillevenmt {
+  width: 520px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+}
+#evenmt {
+  width: 520px;
+  float: right;
+  font-size: medium;
+  color: #000000;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 3px;
+  background-color: rgb(159, 200, 216);
+  padding: 3px;
+}
+.grid-item1 {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  height: 145px;
+  padding: 20px;
+  font-size: medium;
+  
+}
+#gridevnmt{
+  float:right;
+  text-align: top;
+  height: 145px;
+  width: 300px;
+  background-color: white;
+
+}
+#footer {
+  clear: both;
+  background-color: #000000 ;
+  color : #FFFFFF;
+  padding: 10px;
+  text-align: right;
+}
+
+/* Spécial Mes favoris */
+#grillefav {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  }
+.grid-contfav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 3px;
+  padding: 3px;
+  }       
+.grid-itemfav {
+  height: 160px;
+  width: 120px;
+  padding: 20px;
+  margin-left: 7px;
+  font-size: medium;
+  text-align: left;
+  } 
+
+.grid-item1fav {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  height: 110px;
+  padding: 20px;
+  font-size: medium;
+  }
+#gridevnmtfav{
+  float:left;
+  text-align: top;
+  height: 100px;
+  width: 200px;
+  background-color: white;
+  }
+#gridevnmt1{
+  float:right;
+  text-align: top;
+  height: 100px;
+  width: 800px;
+  background-color: white;
+  }
+#gridpict{
+  float:left
+  }      
+.grid-contfav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 3px;
+  padding: 3px;
+  }    
+
+/* Ajout page Favoris de Gavin*/
+.box{
+align-self: center;
+}
+
+#contact{
+display: flex;
+flex-flow: column wrap;
+height: 100px;
+width: 100px;
+border:px solid;
+}
+.info{
+width: 100px;
+height: 150px;
+}
+.annonce{
+display: flex;
+align-content: center;
+width: 550px;
+height: 100px;
+}
+
+/*CSS d'Amélie, de base pour la page explorer*/
+ul#bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:  #008B8B;
+}
+li a.active{
+    background-color: #008B8B;
+     color: white;
+}
+#box2 {
+  position: absolute;
+  right: 10px;
+  color: #333;
+}
+
+#mainTitle{
+    font-size: 40px;
+    font-weight: bold;
+    color: #008B8B;
+    display: inline-block;
+    margin: 10px 5px 20px 5px;
+    padding-bottom: 40px;
+}
+#underTitle{
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 5px 20px 5px;
+    padding-bottom: 40px;
+    color: #333;
+}
+#p1 {
+  color: #333;
+}
+
+#titre {
+    padding: 10px;
+    height: 60px;
+}
+
+.modifier{
+  position: absolute;
+  left: 243px;
+  top: 185px;
+  background-color: #333;
+  padding: 5px 5px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+/*
+.button {
+  transition-duration: 0.4s;
+  background-color: #333;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: #008B8B;
+  color: white;
+}*/
+
+/*comment centrer l'image ? */
+#box5 {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 20px;
+  width: auto;
+  color: #008B8B;
+}
+
+#box6 {
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/*utilisé pour accueil : */
+.box {
+  border: 2px solid #333;
+  background-color: rgba(0, 139, 139, 0.37) ;
+  padding: 10px;
+  transition-duration: 0.4s;
+  height: auto;
+  width: 220px;
+  align-items: flex-start;
+}
+
+.box:hover{
+    background-color:rgba(0, 139, 139, 0.836) ;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/*login*/
+.user_card {
+  height: 400px;
+  width: 350px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #f39c12;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+
+}
+.brand_logo_container {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  top: -75px;
+  border-radius: 50%;
+  background: #60a3bc;
+  padding: 10px;
+  text-align: center;
+}
+.brand_logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.form_container {
+  margin-top: 100px;
+}
+.login_btn {
+  width: 100%;
+  background: #c0392b !important;
+  color: white !important;
+}
+.login_btn:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+.login_container {
+  padding: 0 2rem;
+}
+.input-group-text {
+  background: #c0392b !important;
+  color: white !important;
+  border: 0 !important;
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: #c0392b !important;
+}
+/* ajout CSS favori Tinto*/
 p{
-    font-size: 13px;
+  font-size: 13px;
 }
 .br{
-    margin-bottom: 2 px;
+  margin-bottom: 2 px;
 }
 .contfav{
-    padding:0;
+  padding:0;
 }
 .contann{
-    border: 2px solid black;
-    overflow-y:scroll;
-    margin-bottom: 3px;
+  border: 2px solid black;
+  overflow-y:scroll;
+  margin-bottom: 3px;
 }
 .matdiv{
-    float:left;
+  float:left;
 }
 .butclass{
-    box-shadow: 5px 5px 0 black;
+  box-shadow: 5px 5px 0 black;
 }
 .colon{
-    text-align: bottom;  
+  text-align: bottom;  
 }
 .size{
-    height:30px;
-    font-size: 40px;
+  height:30px;
+  font-size: 40px;
 }
 .listdiv{
-    float:left;
-    font-size: 11px;
-    padding:0 ;
-    list-style-type: none;
+  float:left;
+  font-size: 11px;
+  padding:0 ;
+  list-style-type: none;
 }
 .classul{
-    list-style-type: none;
-    padding:0;
-    font-size: 13px;
+  list-style-type: none;
+  padding:0;
+  font-size: 13px;
 }
 .favdiv{
-    padding-left:  10px;
+  padding-left:  10px;
+}
+/*ajout pout page create annonce*/
+.contfavann{
+  padding-left: 60px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: inline-flex;
+}
+.cadre{
+  border: 1px solid black;
+}
+.butclassann{
+  box-shadow: 5px 5px 0 black;
+  margin-bottom: 20px;
+  width: 100px;
+  float:right;
+}
+.header{
+  padding-top: 20px;
+}
+.rangedim{
+  padding-top: 20px;
+  width: 90px;
+  font-size: 13px;
+}
+.rowformat{
+  padding: 20px;
 }
