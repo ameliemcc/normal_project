@@ -7,6 +7,7 @@ import { ReactiveDict } from 'meteor/reactive-dict';
  
 import { Annonces } from '../../api/annonces.js';
 
+/*
 Template.annonces.onCreated(function bodyOnCreated() {
     this.state = new ReactiveDict();
   });
@@ -18,6 +19,7 @@ Template.annonces.helpers({
     return Annonces.find({}, { sort: { createdAt: -1 } });
   },
 });
+*/
 
 Template.annonces.events({
     'submit .new-annonce': function(event) { 
@@ -36,7 +38,7 @@ Template.annonces.events({
       });
    
       // Clear form
-     target.title.value = '';
+      target.title.value = '';
       target.description.value = '';
     },
    
