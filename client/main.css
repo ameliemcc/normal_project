@@ -1,10 +1,4 @@
-* {
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  
-  /*Ce fichier est le CSS pour la page NUA Accueil Membres, fait par Tinto, mis ici par Amélie*/
+/* BARRE DE NAVIGATION */
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -53,6 +47,130 @@ button #profil{
   color: white;
 }
 
+/* FIN DE LA BARRE DE NAVIGATION */
+
+* {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+/* PAGE ACCUEIL */
+#boxRechercher{
+  position: absolute;
+  left: 820px;
+  top: -115px;
+}
+
+#motsCles{
+  border-radius: 5px;
+  border-color: #333;
+}
+
+#boutonRechercher{
+  border-radius: 5px;
+  border-color: #333;
+  position: absolute;
+  right: -120px;
+}
+  
+#boutonRechercher:hover{
+  background-color: #008B8B;
+}
+
+#nouveauxMembres{
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  left: -57px;
+}
+
+.box {
+  border: 2px solid #008B8B;
+  background-color: white(0, 139, 139, 0.37) ;
+  padding: 10px;
+  transition-duration: 0.4s;
+  height: auto;
+  width: 220px;
+  align-items: flex-start;
+}
+.box:hover{
+  background-color: #008B8B ;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#boxNouveauxMembres1{
+  position: absolute;
+  top: 40px;
+  left: -70px;
+}
+
+#boxNouveauxMembres2{
+  position: absolute;
+  top: 40px;
+  left: 0px;
+}
+
+#annoncesRecentes{
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#nvlleAnnonce{
+  border-radius: 5px;
+  border-color: #333;
+  position: absolute;
+  top: 5px;
+  left: 250px;
+}
+#nvlleAnnonce:hover{
+  background-color: #008B8B;
+}
+
+#boxAnnoncesRecentes1{
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+#boxAnnoncesRecentes2{
+  position: absolute;
+  top: 220px;
+  left: 0px;
+}
+#boxAnnoncesRecentes3{
+  position: absolute;
+  top: 380px;
+  left: 0px;
+}
+/* FIN DE LA PAGE ACCUEIL */
+
+
+/* PAGE MES FAVORIS */
+#mesFavoris{
+  font-size: 25px;
+  position: absolute;
+  top: 250px;
+  left: 28px;
+}
+
+#annoncesEtProfils{
+  position: relative;
+  top: 70px;
+  left: -37px;
+}
+
+#footer{
+  position: relative;
+  bottom: -50px;
+}
+
+/* FIN DE LA PAGE MES FAVORIS */
+
 
 
 #box2 {
@@ -64,8 +182,8 @@ button #profil{
 #header {
   font-size: 80px;
   float: left;
-
 }
+
 #head{
   border: black 1px;
   display: block;
@@ -274,9 +392,7 @@ li a.active{
     margin: 10px 5px 20px 5px;
     padding-bottom: 40px;
     color: #333;
-}
-#p1 {
-  color: #333;
+  
 }
 
 #titre {
@@ -296,47 +412,47 @@ li a.active{
   border-radius: 5px;
 }
 
-/*comment centrer l'image ? */
-#box5 {
+/* PAGE MON PROFIL */ 
+#boxInformationsPersonnelles {
   font-size: 20px;
   display: inline-block;
   margin-left: 20px;
   width: auto;
-  color: #008B8B;
+  color: #333;
+  position: absolute; 
+  top: 200px; 
+  left: 0px;
 }
 
-#box6 {
+#boxLiensEtPiecesJointes {
   font-size: 20px;
   display: inline-block;
   margin-left: 20px;
+  position: absolute;
+  top: 200px;
+  left: 600px;
 }
 
-/*utilisé pour accueil : */
-.box {
-  border: 2px solid #333;
-  background-color: rgba(0, 139, 139, 0.37) ;
-  padding: 10px;
-  transition-duration: 0.4s;
-  height: auto;
-  width: 220px;
-  align-items: flex-start;
+#boxMaBiographie{
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 20px;
+  position: absolute;
+  top: 650px;
+  left: 0px;
 }
 
-.box:hover{
-    background-color:rgba(0, 139, 139, 0.836) ;
-}
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
+/* FIN DE LA PAGE MON PROFIL */
 
-/*login*/
+
+
+/* PAGE LOGIN */
 .user_card {
   height: 400px;
   width: 350px;
   margin-top: auto;
   margin-bottom: auto;
-  background: #f39c12;
+  background: #008B8B;
   position: relative;
   display: flex;
   justify-content: center;
@@ -346,41 +462,28 @@ li a.active{
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
-
-}
-.brand_logo_container {
-  position: absolute;
-  height: 170px;
-  width: 170px;
-  top: -75px;
-  border-radius: 50%;
-  background: #60a3bc;
-  padding: 10px;
-  text-align: center;
-}
-.brand_logo {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  border: 2px solid white;
 }
 .form_container {
   margin-top: 100px;
 }
 .login_btn {
   width: 100%;
-  background: #c0392b !important;
-  color: white !important;
+  background-color: white !important;
+  color: #333 !important;
 }
 .login_btn:focus {
   box-shadow: none !important;
   outline: 0px !important;
 }
+.login_btn:hover{
+  color: white;
+  background-color: #333
+}
 .login_container {
   padding: 0 2rem;
 }
 .input-group-text {
-  background: #c0392b !important;
+  background: #333 !important;
   color: white !important;
   border: 0 !important;
   border-radius: 0.25rem 0 0 0.25rem !important;
@@ -390,9 +493,13 @@ li a.active{
   box-shadow: none !important;
   outline: 0px !important;
 }
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-  background-color: #c0392b !important;
+#ml-2{
+  color: #333;
 }
+
+
+/* TOUT LE CSS CI-DESSOUS DOIT ETRE TRIE ET DEPLACER VERS LA SECTION DE SA PAGE CORRESPONDANTE */
+
 /* ajout CSS favori Tinto*/
 p{
   font-size: 13px;
@@ -414,28 +521,32 @@ p{
 .butclass{
   box-shadow: 5px 5px 0 black;
 }
+.size{
+  height:15px; 
+}
 .colon{
   text-align: bottom;  
 }
-.size{
-  height:30px;
-  font-size: 40px;
-}
 .listdiv{
-  float:left;
+  display:inline-flex;
+  flex-direction: column;
   font-size: 11px;
   padding:0 ;
   list-style-type: none;
+  border: 2px solid black;
 }
 .classul{
   list-style-type: none;
   padding:0;
-  font-size: 13px;
+  margin:0;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 0.75;
 }
 .favdiv{
-  padding-left:  10px;
+  float:right;
 }
-/*ajout pout page create annonce*/
+/*ajout pour page create annonce*/
 .contfavann{
   padding-left: 60px;
   padding-bottom: 20px;
