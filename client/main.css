@@ -1,3 +1,38 @@
+/* PREMIERE PAGE */
+#titre_premierePage {
+  text-align: center;
+}
+#NUA_premierePage {
+  color: #008B8B;
+  font-size: 65px;
+}
+#soustitre_premierePage {
+  color: #333;
+  font-size: 35px;
+}
+#login {
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 350px;
+  left: 465px;
+}
+#login:hover{
+  background-color: #008B8B;
+}
+#creation{
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 350px;
+  left: 700px;
+}
+#creation:hover{
+  background-color: #008B8B;
+}
+
 /* BARRE DE NAVIGATION */
 /* Add a black background color to the top navigation */
 .topnav {
