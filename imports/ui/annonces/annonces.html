@@ -1,13 +1,7 @@
 <template name="annonces">
-   
-<h1>dneb</h1>
+  <body>
+    
   
-<div class="contfavann container">
-  <span class="material-icons size">
-      keyboard_return
-  </span>
-  <h4>explorer</h4>
-</div>
 <div class="contann container">
 <h4>Créer une annonce</h4>
        
@@ -17,22 +11,15 @@
     <div class="col-md-1" >
         
     </div>
-        
     <div  class="col-md-10 cadre">
-        
-        <div class="form-group">
-            <label for="comment">Entrez votre titre d'annonce:</label>
-            <textarea class="form-control" rows="1" id="comment"></textarea>
-          </div>
-
-        <div class="form-group">
-            <label for="comment">Entrez votre texte:</label>
-            <textarea class="form-control" rows="6" id="texte_annonce"></textarea>
-          
-        </div>
-    
-    </div>
-
+    <form class="new-annonce"> 
+            <label for="comment">Donnez un titre à votre annonce:</label> <br>
+            <textarea  class="form-control" rows="1" name="title" placeholder="Titre de votre annonce"></textarea>
+            <label for="comment">Décrivez votre annonce: en quoi consiste votre projet, quels sont vos objectifs et vos motivations?</label> <br>
+            <textarea class="form-control" rows="5" name="description" placeholder="Description de votre annonce"></textarea>
+            <input type="submit" value="submit">
+    </form>
+</div>
     <div class="col-md-1" >
         
     </div>
@@ -43,37 +30,15 @@
 <div class="line row">
             
     <div class="col-md-2">
-  
-        <strong>Rattacher projet :</strong>
-        <br>
-        <br>
-        <div class="form-check">
-        <label class="form-check-label" for="check1">
-            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Projet1
-        </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label" for="check2">
-          <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Projet2
-        </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Projet3
-        </label>
-        </div>
-        
-        <form>
             <div class="form-group rangedim">
-              <label for="formControlRange">Localité- rayon</label>
-              <input type="range" class="form-control-range" id="formControlRange">
+              <strong>Région</strong>
+              <label for="formControlRange">Dans quelle région/localité souhaitez-vous développer votre projet?</label>
+              <input type="text" class="form-control-range" name="region" placeholder="Région">
             </div>
-          </form>
     </div>
 
     <div class="col-md-2" >
-        <strong>Age :</strong>
-        <br>
+        <strong>Âge recherché :</strong>
         <br>
         <div class="form-check">
         <label class="form-check-label" for="check1">
@@ -90,8 +55,13 @@
             <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something"> 30 ans et plus
         </label>
         </div>
+        <div class="form-check">
+          <label class="form-check-label" for="check1">
+              <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something"> C'est égal.
+          </label>
+          </div>
 
-        <strong>Sexe :</strong>
+        <strong>Genre :</strong>
         <br>
 
         <div class="form-check">
@@ -202,9 +172,9 @@
         </div>
           
         <button class="butclassann">Publier</button>
-
+    <input type="submit" value="submit">
     </div>
 </div> 
 </div> 
-
+</body>
 </template>
