@@ -508,16 +508,16 @@ li a.active{
 }
 .login_btn {
   width: 100%;
-  background-color: white !important;
-  color: #333 !important;
+  background-color: #333 !important;
+  color: white !important;
+  border-radius: 5px;
 }
 .login_btn:focus {
   box-shadow: none !important;
   outline: 0px !important;
 }
 .login_btn:hover{
-  color: white;
-  background-color: #333
+  background-color: #008B8B;
 }
 .login_container {
   padding: 0 2rem;
