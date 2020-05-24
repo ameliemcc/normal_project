@@ -36,8 +36,8 @@ Template.annonces.events({
       });
    
       // Clear form
-     // target.text.value = '';
-      //target.codePostal.value = '';
+     target.title.value = '';
+      target.description.value = '';
     },
    
   });

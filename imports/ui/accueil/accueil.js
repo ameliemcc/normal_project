@@ -8,7 +8,7 @@ import '../annonces/annonces.js';
 
 
 Template.accueil.helpers({
-  'annonces': () => meteor.Annonces.find({}).fetch()
+  'annonces': () => Annonces.find({}).fetch()
   });
 
 /*
