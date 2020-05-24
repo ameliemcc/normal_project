@@ -40,6 +40,7 @@ Template.annonces.events({
       // Clear form
       target.title.value = '';
       target.description.value = '';
+      FlowRouter.go('accueil');
     },
    
   });

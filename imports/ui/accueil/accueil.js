@@ -5,15 +5,33 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 
 import { Annonces } from '../../api/annonces.js';
 import '../annonces/annonces.js';
+import '../annonces/templateAnnonce.html';
 
 
-Template.accueil.helpers({
+/*Template.accueil.helpers({
   'annonces': () => Annonces.find({}).fetch()
-  });
+  });*/
 
-/*
+
   Template.accueil.helpers({
-    'annonces': () => {
+    'annonces': () => Annonces.find({}).fetch()
+    });
+
+
+
+     /* annonces : function (){
+        return Annonces.find({}).fetch()
+
+
+  Template.accueil.helpers({
+    annonces: () => Annonces.find({}).fetch()
+    });
+      }
+
+  
+
+  Template.accueil.helpers({
+    annonces: () => {
       let liste_annonces = Meteor.Annonces;
       let annonces_a_retourner = [];
       for(let i=0; i< liste_annonces.length; i++) {
@@ -22,4 +40,6 @@ Template.accueil.helpers({
       return annonces_a_retourner
     }
   })
+
   */
+  
