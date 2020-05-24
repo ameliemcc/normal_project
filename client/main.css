@@ -73,6 +73,20 @@
   color: white;
 }
 
+/* Bouton Logout */
+#logout{
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  right: 40px;
+  top: 70px;
+}
+#logout:hover{
+  background-color: #008B8B;
+}
+
+
 /* FIN DE LA BARRE DE NAVIGATION */
 
 * {

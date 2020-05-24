@@ -46,6 +46,11 @@ Template.app_body.events({
     FlowRouter.go('annonces');
   },
 
+  'click #logout'(event) {
+    event.preventDefault();
+    FlowRouter.go('un')
+  },
+
   'click #submit'(event) {
     event.preventDefault();
     // let nom = document.getElementById('nom').value;
