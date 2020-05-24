@@ -17,9 +17,6 @@ import { Template } from 'meteor/templating';
 import { Accounts } from 'meteor/accounts-base';
 import { Membres } from "../../api/membres.js";
 
-Template.accueil.helpers({
-  "element": () => Annonces.find({}).fetch()
-});
 
 Template.app_body.helpers({
   utilisateur: () => Meteor.user().username,
