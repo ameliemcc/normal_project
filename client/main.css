@@ -86,13 +86,16 @@
   background-color: #008B8B;
 }
 
-
 /* FIN DE LA BARRE DE NAVIGATION */
+
+
 
 * {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+
 
 
 /* PAGE ACCUEIL */
@@ -496,6 +499,35 @@ li a.active{
   left: 0px;
 }
 
+#modifierProfil{
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 215px;
+  left: 1174px;
+}
+#modifierProfil:hover{
+  background-color: #008B8B;
+}
+
+#submit{
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+#submit:hover{
+  background-color: #008B8B;
+}
+
+#modifierPhotoProfil{
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+#modifierPhotoProfil:hover{
+  background-color: #008B8B;
+}
 /* FIN DE LA PAGE MON PROFIL */
 
 

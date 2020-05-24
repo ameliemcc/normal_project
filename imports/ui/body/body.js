@@ -9,6 +9,7 @@ import '../templates/creer.js';
 import '../annonces/annonces.js';
 import '../../../imports/premierePage/premierePage.js';
 import '../../../imports/premierePage/un.html';
+import '../profil/modifierProfil.js'
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
 
@@ -49,6 +50,11 @@ Template.app_body.events({
   'click #logout'(event) {
     event.preventDefault();
     FlowRouter.go('un')
+  },
+
+  'click #modifierProfil'(event) {
+    event.preventDefault();
+    FlowRouter.go('modifierProfil')
   },
 
   'click #submit'(event) {
