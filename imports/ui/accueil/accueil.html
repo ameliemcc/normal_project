@@ -59,37 +59,15 @@
     <div class="col-sm">
         <div id="annoncesRecentes">Annonces récentes</div>
         <button class="button" id="nvlleAnnonce"> Créer une annonce</button>
-            <box id="boxAnnoncesRecentes1">
-            <div class="grid-item1">
-            <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="100px" width="100px"> <!--Il faut mettre que onClick, ça amène au profil du membre -->
-                <div id=gridevnmt>
-                    <h3>Annonce 1</h3> <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
-                    <p1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p1> 
-                </div>
+        <br>
+        <br>
+            <ul>
+            <div class="contann container">     
+               {{#each annonces}}
+                    {{>annonce}}
+                {{/each}}               
             </div>
-            </box>
-            <box id="boxAnnoncesRecentes2">
-                <div class="grid-item1">
-                <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="100px" width="100px"> <!--Il faut mettre que onClick, ça amène au profil du membre -->
-                    <div id=gridevnmt>
-                        <h3>Annonce 2</h3> <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
-                        <p1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p1> 
-                    </div>
-                </div>
-            </box>
-            <box id="boxAnnoncesRecentes3">
-                <div class="grid-item1">
-                    <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="100px" width="100px"> <!--Il faut mettre que onClick, ça amène au profil du membre -->
-                        <div id=gridevnmt>
-                            <h3>Annonce 3</h3> <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
-                            <p1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p1> 
-                        </div>
-                </div>
-            </box>
-            {{#each annonces}}
-                 {{> annonce}}
-            {{/each }}
-           
+            </ul>
         </div>
         
     </div>
