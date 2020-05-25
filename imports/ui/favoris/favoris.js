@@ -1,11 +1,9 @@
 import { Template } from 'meteor/templating';
 import { Annonces } from '../../api/annonces.js';
-import { Utilisateurs } from '../../api/utilisateurs.js';
 
 
 import '../templates/annonce_grid.html';
 import '../templates/profils_grid.html';
-import '../templates/utilisateurs_grid.html';
 import './favoris.html';
 
 Template.favoris.helpers({
@@ -24,10 +22,5 @@ Template.favoris.helpers({
   annonces () {
     return Annonces.find({}).fetch();
   },
-
-  firstName() {
-    return Utilisateurs.find({}).fetch();
-  },
-
 
 });
