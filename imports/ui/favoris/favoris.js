@@ -12,7 +12,7 @@ Template.favoris.helpers({
     {nom:"Pierre Dupont", age:"25 ans", profess: "Apprenti", localité: "Yens"},
     {nom:"Paul Durand", age:"25 ans", profess: "Boulanger", localité: "Morrens"}
   ],
- /* annonces : function (){
+ annonces : function (){
     return Annonces.find({}).fetch()
-  }*/
+  }
 });
