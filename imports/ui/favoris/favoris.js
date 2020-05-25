@@ -17,6 +17,9 @@ Template.favoris.helpers({
   utilisateurs () {
     return Meteor.users.find({}).fetch();
   },
+  profile () {
+    return Meteor.users.profile;
+  },
 
 
 });
