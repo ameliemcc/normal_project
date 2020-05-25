@@ -9,16 +9,18 @@ import '../annonces/templateAnnonce.html';
 import '../body/body.js'
 
 
-/*Template.accueil.helpers({
-  'annonces': () => Annonces.find({}).fetch()
+Template.accueil.helpers({
+  'annonces': () => Annonces.find({}, { sort: { createdAt: -1 } })
+});
+  /*
   });*/
 
-
+/*
   Template.accueil.helpers({
     'annonces': () => Annonces.find({}).fetch()
     });
 
-
+    return Annonces.find({}, { sort: { createdAt: -1 } });
 /*
       annonces : function (){
         return Annonces.find({}).fetch()

@@ -1,5 +1,4 @@
 import './annonces.html';
-import './annonces.css';
 import './templateAnnonce.html';
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
@@ -29,11 +28,18 @@ Template.annonces.events({
       // Get value from form element
       let titreVal = event.target.title.value;
       let DescriptionlVal = event.target.description.value;
-   
+      let regionVal = event.target.region.value;
+      let partVal =event.target.part.value;
+      let roleVal = event.target.role.value;
+      let emailVal = event.target.email.value;
       // Insert a task into the collection
       Annonces.insert({
         title: titreVal,
         description: DescriptionlVal,
+        region: regionVal,
+        part: partVal,
+        role: roleVal,
+        email: emailVal,
         createdAt: new Date(), // current time
       });
    
