@@ -1,38 +1,3 @@
-/* PREMIERE PAGE */
-#titre_premierePage {
-  text-align: center;
-}
-#NUA_premierePage {
-  color: #008B8B;
-  font-size: 65px;
-}
-#soustitre_premierePage {
-  color: #333;
-  font-size: 35px;
-}
-#login {
-  background-color: #333;
-  color: white;
-  border-radius: 5px;
-  position: absolute;
-  top: 350px;
-  left: 465px;
-}
-#login:hover{
-  background-color: #008B8B;
-}
-#creation{
-  background-color: #333;
-  color: white;
-  border-radius: 5px;
-  position: absolute;
-  top: 350px;
-  left: 700px;
-}
-#creation:hover{
-  background-color: #008B8B;
-}
-
 /* BARRE DE NAVIGATION */
 /* Add a black background color to the top navigation */
 .topnav {
@@ -534,8 +499,8 @@ li a.active{
 
 /* PAGE LOGIN */
 .user_card {
-  height: 400px;
-  width: 350px;
+  height: 100px;
+  width: 300px;
   margin-top: auto;
   margin-bottom: auto;
   background: #008B8B;
@@ -548,6 +513,32 @@ li a.active{
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
+}
+#titre_premierePage {
+  text-align: center;
+}
+#NUA_premierePage {
+  color: #008B8B;
+  font-size: 65px;
+}
+#soustitre_premierePage {
+  color: #333;
+  font-size: 35px;
+}
+#creation{
+  background-color: #333;
+  color: white;
+  margin: auto;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+}
+#creation:hover{
+  background-color: #008B8B;
 }
 .form_container {
   margin-top: 100px;
@@ -583,6 +574,31 @@ li a.active{
   color: #333;
 }
 
+#login-dropdown-list.accounts-dialog{
+  background-color: #008B8B; 
+}
+#login-sign-in-link.login-link-text{
+  color:#333;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  top: 120px;
+  left: 60px;
+}
+#login-dropdown-list.accounts-dialog{
+  vertical-align: middle;
+  width: 300px;
+  position: absolute;
+  top: 50px;
+  left: -18px;
+}
+#login-buttons-password.login-button.login-button-form-submit{
+  background-color: #008B8B;
+}
+#login-buttons-password.login-button.login-button-form-submit:hover{
+  background-color: #333;
+}
 
 /* TOUT LE CSS CI-DESSOUS DOIT ETRE TRIE ET DEPLACER VERS LA SECTION DE SA PAGE CORRESPONDANTE */
 

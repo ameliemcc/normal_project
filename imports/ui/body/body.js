@@ -39,6 +39,7 @@ Template.app_body.events({
   'click #logout'(event) {
     event.preventDefault();
     Meteor.logout();
+    FlowRouter.go('login')
   },
   'click #nvlleAnnonce'(event) {
     event.preventDefault();
@@ -100,11 +101,7 @@ Template.app_body.events({
 });
 
 
-Template.premierePage.events({
-  'click #login'(event) {
-      event.preventDefault();
-      FlowRouter.go('login');
-  },
+Template.login.events({
   'click #creation'(event){
           event.preventDefault();
           FlowRouter.go('creation');
