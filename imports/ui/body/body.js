@@ -7,7 +7,6 @@ import '../profil/profil.js';
 import '../login/login.js';
 import '../templates/creer.js';
 import '../annonces/annonces.js';
-import '../templates/plusAnnonces.html';
 import '../../../imports/premierePage/premierePage.js';
 import '../../../imports/premierePage/un.html';
 import '../profil/modifierProfil.js'
