@@ -1,0 +1,8 @@
+<template name='logged'>
+    {{#if currentUser}}
+    {{> accueil_logged }}
+{{else}}
+    {{> login}}
+{{/if}}
+
+</template>

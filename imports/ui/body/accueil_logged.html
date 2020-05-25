@@ -1,4 +1,4 @@
-<template name="app_body">
+<template name="accueil_logged">
     <header>
         <div id= titre>
             <p id="mainTitle">NUA</p>
@@ -6,11 +6,6 @@
           <div id="user">
             {{#if currentUser}}
             Bienvenue {{utilisateur}} !
-<<<<<<< Updated upstream
-            <button id="logout">Déconnexion</button>
-           
-=======
->>>>>>> Stashed changes
             {{/if}}
           </div>
         </div>
@@ -23,15 +18,13 @@
             <button id="favvoris"><i class="fa fa-fw fa-heart"></i> &nbsp;Mes favoris</button>
             <button id="profil"><i class="fa fa-fw fa-user"></i>&nbsp;Mon profil</button>
         </box>
+        <button id="logout">Déconnexion</button>
     </div>
 
-  
 
- 
-        {{> Template.dynamic template=top}}
    
     </div>
-    {{> Template.dynamic template=main}} 
+    {{> accueil}} 
   
     <!-- area for you to render content into-->
 </template>
