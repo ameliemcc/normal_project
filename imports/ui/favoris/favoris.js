@@ -6,6 +6,7 @@ import '../templates/annonce_grid.html';
 import '../templates/profils_grid.html';
 import './favoris.html';
 
+
 Template.favoris.helpers({
 
   surname: [
@@ -24,3 +25,4 @@ Template.favoris.helpers({
   },
 
 });
+
