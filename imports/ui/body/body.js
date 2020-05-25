@@ -7,6 +7,7 @@ import '../profil/profil.js';
 import '../login/login.js';
 import '../templates/creer.js';
 import '../annonces/annonces.js';
+import '../templates/plusAnnonces.html';
 import '../../../imports/premierePage/premierePage.js';
 import '../../../imports/premierePage/un.html';
 import '../profil/modifierProfil.js'
@@ -44,9 +45,9 @@ Template.app_body.events({
     FlowRouter.go('annonces');
   },
 
-  'click #logout'(event) {
+  'click #plusAnnonce' (event) {
     event.preventDefault();
-    FlowRouter.go('un')
+    FlowRouter.go('plusAnnonces')
   },
 
   'click #modifierProfil'(event) {
