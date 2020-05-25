@@ -7,7 +7,11 @@ import '../profil/profil.js';
 import '../login/login.js';
 import '../templates/creer.js';
 import '../annonces/annonces.js';
+import '../../../imports/premierePage/premierePage.js';
+import '../../../imports/premierePage/un.html';
+import '../profil/modifierProfil.js'
 import { FlowRouter } from 'meteor/kadira:flow-router';
+
 
 import { Template } from 'meteor/templating';
 import { Accounts } from 'meteor/accounts-base';
@@ -38,6 +42,16 @@ Template.app_body.events({
   'click #nvlleAnnonce'(event) {
     event.preventDefault();
     FlowRouter.go('annonces');
+  },
+
+  'click #logout'(event) {
+    event.preventDefault();
+    FlowRouter.go('un')
+  },
+
+  'click #modifierProfil'(event) {
+    event.preventDefault();
+    FlowRouter.go('modifierProfil')
   },
 
   'click #submit'(event) {
@@ -82,5 +96,16 @@ Template.app_body.events({
       alert('Votre mot de passe est trop court! Veuillez choisir un mot de passe de minimum 5 caractères. ');
     }
   },
-
 });
+
+
+Template.premierePage.events({
+  'click #login'(event) {
+      event.preventDefault();
+      FlowRouter.go('login');
+  },
+  'click #creation'(event){
+          event.preventDefault();
+          FlowRouter.go('creation');
+  },
+  });

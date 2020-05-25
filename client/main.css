@@ -1,3 +1,38 @@
+/* PREMIERE PAGE */
+#titre_premierePage {
+  text-align: center;
+}
+#NUA_premierePage {
+  color: #008B8B;
+  font-size: 65px;
+}
+#soustitre_premierePage {
+  color: #333;
+  font-size: 35px;
+}
+#login {
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 350px;
+  left: 465px;
+}
+#login:hover{
+  background-color: #008B8B;
+}
+#creation{
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 350px;
+  left: 700px;
+}
+#creation:hover{
+  background-color: #008B8B;
+}
+
 /* BARRE DE NAVIGATION */
 /* Add a black background color to the top navigation */
 .topnav {
@@ -38,12 +73,29 @@
   color: white;
 }
 
+/* Bouton Logout */
+#logout{
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  right: 40px;
+  top: 70px;
+}
+#logout:hover{
+  background-color: #008B8B;
+}
+
 /* FIN DE LA BARRE DE NAVIGATION */
+
+
 
 * {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+
 
 
 /* PAGE ACCUEIL */
@@ -447,6 +499,35 @@ li a.active{
   left: 0px;
 }
 
+#modifierProfil{
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 215px;
+  left: 1174px;
+}
+#modifierProfil:hover{
+  background-color: #008B8B;
+}
+
+#submit{
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+#submit:hover{
+  background-color: #008B8B;
+}
+
+#modifierPhotoProfil{
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+#modifierPhotoProfil:hover{
+  background-color: #008B8B;
+}
 /* FIN DE LA PAGE MON PROFIL */
 
 
@@ -473,16 +554,16 @@ li a.active{
 }
 .login_btn {
   width: 100%;
-  background-color: white !important;
-  color: #333 !important;
+  background-color: #333 !important;
+  color: white !important;
+  border-radius: 5px;
 }
 .login_btn:focus {
   box-shadow: none !important;
   outline: 0px !important;
 }
 .login_btn:hover{
-  color: white;
-  background-color: #333
+  background-color: #008B8B;
 }
 .login_container {
   padding: 0 2rem;

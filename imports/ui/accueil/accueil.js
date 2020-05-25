@@ -18,8 +18,8 @@ import '../annonces/templateAnnonce.html';
     });
 
 
-
-     /* annonces : function (){
+/*
+      annonces : function (){
         return Annonces.find({}).fetch()
 
 
@@ -40,6 +40,4 @@ import '../annonces/templateAnnonce.html';
       return annonces_a_retourner
     }
   })
-
   */
-  
