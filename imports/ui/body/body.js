@@ -7,15 +7,17 @@ import '../profil/profil.js';
 import '../login/login.js';
 import '../templates/creer.js';
 import '../annonces/annonces.js';
+import '../templates/plusAnnonces.html';
+import '../../../imports/premierePage/premierePage.js';
+import '../../../imports/premierePage/un.html';
+import '../profil/modifierProfil.js'
 import { FlowRouter } from 'meteor/kadira:flow-router';
+
 
 import { Template } from 'meteor/templating';
 import { Accounts } from 'meteor/accounts-base';
 import { Membres } from "../../api/membres.js";
 
-Template.accueil.helpers({
-  "element": () => Annonces.find({}).fetch()
-});
 
 Template.app_body.helpers({
   utilisateur: () => Meteor.user().username,
@@ -41,6 +43,16 @@ Template.app_body.events({
   'click #nvlleAnnonce'(event) {
     event.preventDefault();
     FlowRouter.go('annonces');
+  },
+
+  'click #plusAnnonce' (event) {
+    event.preventDefault();
+    FlowRouter.go('plusAnnonces')
+  },
+
+  'click #modifierProfil'(event) {
+    event.preventDefault();
+    FlowRouter.go('modifierProfil')
   },
 
   'click #submit'(event) {
@@ -85,5 +97,16 @@ Template.app_body.events({
       alert('Votre mot de passe est trop court! Veuillez choisir un mot de passe de minimum 5 caractères. ');
     }
   },
-
 });
+
+
+Template.premierePage.events({
+  'click #login'(event) {
+      event.preventDefault();
+      FlowRouter.go('login');
+  },
+  'click #creation'(event){
+          event.preventDefault();
+          FlowRouter.go('creation');
+  },
+  });

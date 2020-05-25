@@ -1,3 +1,5 @@
+<!-- création d'un profil-->
+
 <template name="creation">
   <head>
     <meta charset="UTF-8">
@@ -22,7 +24,7 @@
   <div>
     <img src="https://plus.maths.org/issue42/outerspace/square.png" 
     alt="photoDeProfil" width=100px> 
-    <input type="button" value="ajouter">
+    <input type="button" value="Ajouter">
 </div> 
 </div>
 <form class="new-membre">
@@ -63,18 +65,33 @@
   <div class="form-inline">
     <div class="form-group col-md-2">
       <label for="profesison">Profession<span class="text-danger">*</span></label>
-      <input type="text" name="profession" id="profession">
-    </div> 
-    <div class="form-group col-md-2">
-      <label for="sexe">Sexe<span class="text-danger">*</span></label>
-      <select id="sexe" class="form-control">
-        <option selected></option>
-        <option>femme</option>
-        <option>homme</option>
-        <option>autre</option>
+      <select id="profession" class="form-control">
+        <option selected>Sélectionner...</option>
+        <option>Réalisateur</option>
+        <option>Photographe</option>
+        <option>Musicien</option>
+        <option>Chanteur</option>
+        <option>Cameraman</option>
+        <option>Perchiste</option>
+        <option>Mixeur</option>
+        <option>Monteur / Editeur</option>
+        <option>Acteur</option>
+        <option>Cascadeur</option>
+        <option>Compositeur</option>
+        <option>Boomer</option>
+        <option>Graphiste</option>
+        <option>Scénariste</option>
       </select>
     </div> 
-  </div>
+  <div class="form-group col-md-2">
+    <label for="sexe">Sexe<span class="text-danger">*</span></label>
+    <select id="sexe" class="form-control">
+      <option selected></option>
+      <option>Femme</option>
+      <option>Homme</option>
+      <option>Autre</option>
+    </select>
+  </div> </div>
   <br>
   <div class="form-inline">
     <label for="example-date-input" class="col-2 col-form-label">Date de naissance<span class="text-danger">*</span></label>

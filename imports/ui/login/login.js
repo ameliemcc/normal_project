@@ -7,3 +7,4 @@ Template.login.events({
       FlowRouter.go('creer');
     }
 })
+
