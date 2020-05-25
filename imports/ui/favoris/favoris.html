@@ -28,9 +28,17 @@
                 {{#each surname}}
                         {{> nomprof}}
                 {{/each}}
+                
             </div>
         </div>  
     </box>
+
+    {{#each firstName}}
+         {{> utilisateurs}}
+    {{/each}}
+    
+
+   
         
     <!--End definition section nouveaux membres-->
         <div id="footer">
@@ -38,5 +46,6 @@
         </div> 
     
     </body>    
+
 
 </template>
