@@ -8,10 +8,8 @@ import '../login/login.js';
 import '../templates/creer.js';
 import '../annonces/annonces.js';
 import '../../../imports/conditionDeConnexion/un.html';
-import '../profil/modifierProfil.js'
+import '../profil/modifierProfil.js';
 import { FlowRouter } from 'meteor/kadira:flow-router';
-
-
 import { Template } from 'meteor/templating';
 import { Accounts } from 'meteor/accounts-base';
 import { Membres } from "../../api/membres.js";
@@ -37,7 +35,7 @@ Template.app_body.events({
   'click #logout'(event) {
     event.preventDefault();
     Meteor.logout();
-    FlowRouter.go('login')
+    FlowRouter.go('un'); //cette ligne de code ne marche pas, je ne sais pas pourquoi
   },
   'click #nvlleAnnonce'(event) {
     event.preventDefault();
