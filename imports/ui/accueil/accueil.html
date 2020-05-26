@@ -30,89 +30,32 @@
 
 
     <body>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <!-- Barre de recherche -->  
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-               
-    <!-- Fin de barre de recherche -->
-                
-    
-    <!-- Nouveaux membres -->
-    <div id="nouveauxMembres">Nouveaux membres</div> 
-    <div class="container accumembers">
-        <div class="row">
-            <div class="col-sm">
-                <div class="box" id="boxNouveauxMembres1">
-                    <p1>
-                        <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                        <i class="far fa-heart" id='emptyHeart'></i>
-                        <br>
-                        {{username}} <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
-                        <br>
-                        Age <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
-                        <br>
-                        {{profile.profession}} <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
-                        <br>
-                        Localité <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
-                    </p1> 
-
-                </div> 
-            </div>
-            <div class="col-sm">
-                <div class="box" id="boxNouveauxMembres2">
-                    <p1>
-                        <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
-                        <i class="far fa-heart" id='emptyHeart'></i>
-                        <br>
-                        Nom Prénom <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
-                        <br>
-                        Age <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
-                        <br>
-                        Profession <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
-                        <br>
-                        Localité <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
-                    </p1> 
-                </div> 
-            </div>
-
-        </div>
-
-        <div> 
-            {{#each utilisateurs}}
-                {{> nouvmembre}}
-            {{/each}}   
-        </div>
-
-    </div>
-    </div>
-    
-    <!-- Fin de nouveaux membres -->
-              
-    <!-- Annonces récentes -->
-    <div class="col-sm">
-        <div id="annoncesRecentes">Annonces récentes</div>
+        <h2> Nouvelles annonces et nouveaux profils</h2>
+     
+        <!--Start definition section Annonces-->
         <button class="button" id="nvlleAnnonce"> Créer une annonce</button>
-        <br>
-        <br>
-            <ul>
-            <div class="contann container">     
-               {{#each annonces}}
-                    {{>annonce}}
-                {{/each}}               
-            </div>
-            </ul>
+    <box id="annoncesEtProfils">
+        <div class="contann container">     
+            <h4> Nouvelles Annonces</h4>
+           {{#each annonces}}
+                {{>publication}}
+            {{/each}}                
+              
         </div>
         
-    </div>
-    
-    <div>
-      
-    </div>
-    </div>
-    <!-- >Fin de annonces récentes -->
+    <!--Start definition section Profils-->
+    <div class="contann container">
+            <h4>Nouveaux Profils</h4>
+            
+            <div class="line row">
+                {{#each utilisateurs}}
+                        {{> nomprof}}
+                {{/each}}
+                
+            </div>
+        </div>  
+    </box>
+       
     
     </body>
     </template>

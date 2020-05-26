@@ -132,7 +132,7 @@
 #nvlleAnnonce{
   border-radius: 5px;
   border-color: #333;
-  position: absolute;
+  float: right;
   top: 5px;
   left: 250px;
 }
