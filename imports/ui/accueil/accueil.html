@@ -47,7 +47,7 @@
     
     <!-- Nouveaux membres -->
     <div id="nouveauxMembres">Nouveaux membres</div> 
-    <div class="container">
+    <div class="container accumembers">
         <div class="row">
             <div class="col-sm">
                 <div class="box" id="boxNouveauxMembres1">
@@ -55,14 +55,15 @@
                         <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="" height="110" width="110px">
                         <i class="fa fa-fw fa-heart"></i>
                         <br>
-                        Nom Prénom <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
+                        {{username}} <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
                         <br>
                         Age <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
                         <br>
-                        Profession <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
+                        {{profile.profession}} <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
                         <br>
                         Localité <!--Il faut mettre ça en relation avec les informations des utilisateurs -->
                     </p1> 
+
                 </div> 
             </div>
             <div class="col-sm">
@@ -81,6 +82,7 @@
                     </p1> 
                 </div> 
             </div>
+
         </div>
     </div>
     </div>
