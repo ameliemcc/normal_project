@@ -11,7 +11,6 @@ import '../body/body.js'
 
 Template.accueil.helpers({
   'annonces': () => Annonces.find({}, { sort: { createdAt: -1 } }),
-
 });
   /*
   });*/
