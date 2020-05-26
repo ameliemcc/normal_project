@@ -19,7 +19,6 @@ Template.accueil.helpers({
   profile () {
     return Meteor.users.profile;
   },
-
 });
 
 
