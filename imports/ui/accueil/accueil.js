@@ -134,24 +134,7 @@ Template.accueil.events({
 
 
 
-/* Pour ajouter ce qui est favorisé aux favoris 
-Il faut que onClick, l'ID de l'annonce ou du membre soit récupéré et ajouter dans currentUser. */
 
-Template.accueil.events({
-  'click #emptyHeart': function (event) {
-    console.log(event);
-    event.preventDefault();
-    var membreFavorise = Meteor.users.findOne(userId);
-    var annonceFavorise = 
-    user = currentUser;
-    user.insert({
-      favorisationMembre: membreFavorise,
-      favorisationAnnonce: annonceFavorise,
-    });
-    document.write('Favorisé !')
-  },
-
-});
 
 
 
