@@ -1,181 +1,53 @@
 <!-- Formulaire de création d'un annonce-->
 
 <template name="annonces">
-  <body>
+<body>
     
   
 <div class="contann container">
 <h4>Créer une annonce</h4>
-       
-    
 <h5>Votre annonce</h5>
 <div class="line row rowformat">
-    <div class="col-md-1" >
-        
-    </div>
-    <div  class="col-md-10 cadre">
+  <div class="col-md-1" >
+  </div>
     <form class="new-annonce"> 
+      <div  class="col-md-10 cadre">
             <label for="comment">Donnez un titre à votre annonce:</label> <br>
             <textarea  class="form-control" rows="1" name="title" placeholder="Titre de votre annonce"></textarea>
             <label for="comment">Décrivez votre annonce: en quoi consiste votre projet, quels sont vos objectifs et vos motivations?</label> <br>
             <textarea class="form-control" rows="5" name="description" placeholder="Description de votre annonce"></textarea>
-            <input type="submit" value="submit">
-    </form>
-</div>
-    <div class="col-md-1" >
-        
-    </div>
-    
-</div>
-
-<h5>Critères</h5>
+      </div> 
+      <br>
+           <h5>Informations complémentaires</h5>
 <div class="line row">
-            
-    <div class="col-md-2">
-            <div class="form-group rangedim">
-              <strong>Région</strong>
-              <label for="formControlRange">Dans quelle région/localité souhaitez-vous développer votre projet?</label>
-              <input type="text" class="form-control-range" name="region" placeholder="Région">
-            </div>
+    <div class="col-md-3">
+      <strong>Région</strong>
+      <label for="formControlRange">Dans quelle région/localité souhaitez-vous développer votre projet?</label>
+      <input type="text" class="form-control-range" name="region" placeholder="Région">
+    </div>
+ 
+    <div class="col-md-3" >
+        <strong>Nombre de participant.e.s recherchés :</strong>
+        <br>
+        <input type="number" class="form-control-range" name="part" placeholder=" ">
     </div>
 
-    <div class="col-md-2" >
-        <strong>Âge recherché :</strong>
+    <div class="col-md-6">
+        <strong>Domaine d'activité :</strong>
+        <label for="formControlRange">Quelles sont les complétences ou les fonctions que vous recherchez pour votre projet?</label>
+        <label for="formControlRange">Par exemple : photographe, réalisateur.trice, cameraman, perchiste, monteur.euse, maquilleur.euse, acteur.trice,... </label>
         <br>
-        <div class="form-check">
-        <label class="form-check-label" for="check1">
-            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">15 - 20 ans
-        </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label" for="check2">
-          <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">20 - 30 ans
-        </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something"> 30 ans et plus
-        </label>
-        </div>
-        <div class="form-check">
-          <label class="form-check-label" for="check1">
-              <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something"> C'est égal.
-          </label>
-          </div>
-
-        <strong>Genre :</strong>
         <br>
-
-        <div class="form-check">
-        <label class="form-check-label" for="check1">
-            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Femme
-        </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label" for="check2">
-          <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Homme
-        </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Autre
-        </label>
-        </div>
-        
-
+        <textarea class="form-control" rows="5" name="role" placeholder="Je recherche des personnes qui savent..."></textarea>
     </div>
 
-    <div class="col-md-2">
-        <strong>Profession :</strong>
-        <br>
-        <br>
-        <div class="form-check">
-        <label class="form-check-label" for="check1">
-            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Photographe
-        </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label" for="check2">
-          <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Réalisateur/trice
-        </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Cameraman
-        </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label" for="check1">
-            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Perchiste
-        </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label" for="check2">
-            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Mixeur/se
-        </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Monteur/se
-        </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label">
-            <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Maquileur/se
-        </label>
-        </div>
-    </div>   
-    
-    <div class="col-md-2">
-        <strong>Profession</strong> (suite):
-        <br>
-        <br>
-        <div class="form-check">
-            <label class="form-check-label" for="check1">
-              <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" >Acteur/trice
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label" for="check2">
-              <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Cascadeur/se
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Maquilleur/se
-            </label>
-          </div> 
-          <div class="form-check">
-            <label class="form-check-label" for="check1">
-              <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" >Décorateur/trice
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label" for="check2">
-              <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Musicien/ne
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label" for="check2">
-              <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Peintre
-            </label>
-          </div>
-          <div class="form-check">
-            <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Autres
-            </label>
-          </div> 
-    </div> 
-
-    <div  class="col-md-4">
-        <div class="form-group">
-            <label for="comment"><strong>Autre Commentaire:</strong></label>
-            <textarea class="form-control" rows="5" id="comment"></textarea>
-        </div>
-          
-        <button class="butclassann">Publier</button>
-    <input type="submit" value="submit">
-    </div>
+</div> 
+<br>
+<strong>Votre adresse email de contact : </strong> 
+<input type="text" name="email" placeholder="prénom.nom@unil.ch">
+<br>
+<input class="butclassann" type="submit" value="submit">      
+    </form>
 </div> 
 </div> 
 </body>
