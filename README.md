@@ -1,15 +1,15 @@
 # projet_groupe_1
 
-Projet NUA : Networking Universitaire Artistique
+#titreProjet NUA : Networking Universitaire Artistique
 
-Cours Unil : Programmation pour Internet II - Meteor.js (SP2020)
+##titreCours Unil : Programmation pour Internet II - Meteor.js (SP2020)
 
 Professeur : Loïc Cattani
 Assistant : Loris Rimaz
 
 Groupe 1 : Amélie Mc Cormick, Rebecca Kneubuehler, Gavin Vinasi, Jacinto Fernandez
 
-Résumé du projet :
+##titreRésumé du projet :
 
 Le projet NUA est une application écrite avec le framework METEOR qui a pour but la création, l'animation et la gestion d'un réseau artistique permettant à ses membres de produire des projets artistiques. 
 NUA permet en effet à des personnes de s'inscrire dans ce réseau artistique afin de réaliser des projets artistiques et/ou de participer à la création de ces projets.
@@ -18,7 +18,7 @@ leurs projets artistiques.
 Initialement prévu pour les étudiants de l'Unil, le projet permettra par extension de devenir un véritable réseau professionel potentiellement utile à la sortie de la Faculté.
 L'utilisation de NUA est strictement soumise à l'inscription préliminaire en tant que membre du réseau.
 
-Project abstract :
+##titreProject abstract :
 
 The NUA project is an application written with the METEOR framework which aims to create, animate and manage an artistic network allowing its members to produce artistic projects.
 NUA allows people to join this artistic network in order to realize artistic projects and / or to participate in the creation of these projects.
