@@ -8,9 +8,12 @@
             
             <ul class="listdiv">
                 <li>{{username}}</li>
-                <li>{{_id}}</li>
                 <li>{{profile.profession}}</li> 
                 <li>{{profile.sexe}}</li>
+                <li>{{currentUser.profile.nom}} {{currentUser.profile.prenom}}</li>
+                <p>Région/localité : {{currentUser.profile.localite}}</p>
+                <p>Compétences/fonctions : {{currentUser.profile.roles}}</p>
+                <p>Année de naissance : {{currentUser.profile.dateInput}}</p>
 
             </ul>
                          
