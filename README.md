@@ -4,8 +4,9 @@
 
 ## Cours Unil : Programmation pour Internet II - Meteor.js (SP2020)
 
-Professeur : Loïc Cattani
-Assistant : Loris Rimaz
+**Professeur :** Loïc Cattani   
+
+**Assistant :** Loris Rimaz
 
 Groupe 1 : Amélie Mc Cormick, Rebecca Kneubuehler, Gavin Vinasi, Jacinto Fernandez
 
