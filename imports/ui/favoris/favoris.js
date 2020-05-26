@@ -22,4 +22,3 @@ Template.favoris.helpers({
   },
 
 });
-
