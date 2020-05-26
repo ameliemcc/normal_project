@@ -21,37 +21,6 @@ Template.accueil.helpers({
   },
 
 });
-/*
-  }); */
-
-/*
-  Template.accueil.helpers({
-    'annonces': () => Annonces.find({}).fetch()
-    });
-
-    return Annonces.find({}, { sort: { createdAt: -1 } });
-/*
-      annonces : function (){
-        return Annonces.find({}).fetch()
-
-
-  Template.accueil.helpers({
-    annonces: () => Annonces.find({}).fetch()
-    });
-      }
-
-
-  Template.accueil.helpers({
-    annonces: () => {
-      let liste_annonces = Meteor.Annonces;
-      let annonces_a_retourner = [];
-      for(let i=0; i< liste_annonces.length; i++) {
-        annonces_a_retourner.push(Annonces.findOne({ _id: liste_annonces[i] }))
-      }
-      return annonces_a_retourner
-    }
-  })
-  */
 
 
 Template.accueil.events({
