@@ -14,7 +14,7 @@ Template.accueil.helpers({
   annonces: () => Annonces.find({}, { sort: { createdAt: -1 } }),
   
   utilisateurs () {
-    return Meteor.users.find({}, { sort: { createdAt: -1 } }),
+    return Meteor.users.find({}).fetch();
   },
   profile () {
     return Meteor.users.profile;
