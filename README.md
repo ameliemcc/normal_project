@@ -78,8 +78,8 @@ ________________________________________________________________________________
 Les principaux composants de l'application NUA sont :
 
 - Framework METEOR V. 1.10.2 et ses packages associés dont :
-- Mongo V. 1.10.0 pour la gestion de la base de données
-- Accounts-base, accounts-password et accounts-ui pour la gestion des comptes et accès des utilisateurs
+* Mongo V. 1.10.0 pour la gestion de la base de données
+* Accounts-base, accounts-password et accounts-ui pour la gestion des comptes et accès des utilisateurs
 - Bootstrap 4.5.0 comme front-end toolkit pour la définition des pages
 
 - Git, Github et Gihub desktop pour le versioning de l'application ainsi que pour la coordination du codage par le team
@@ -112,7 +112,7 @@ ________________________________________________________________________________
 
 ## 6) Tests et validation de l'application :
 
-Une base de données de tests a tout d'abord été créée à l'aide des fonction console de Mongdb pour permettre les premiers tests. Ensuite chaque membre du groupe a testé ses pages indépendamment sur ses branches respectives. Dès que le routing et les fonctions de création d'annonces et de membres ont été disponibles, les tests d'intégration et des fonctionnalités ont été exécutées sur la branche Master.
+Une base de données de tests a tout d'abord été créée à l'aide des fonctions "console" de Mongodb pour permettre les premiers tests. Ensuite chaque membre du groupe a testé ses pages indépendamment sur ses branches respectives. Dès que le routing et les fonctions de création d'annonces et de membres ont été disponibles, les tests d'intégration et des fonctionnalités ont été exécutées sur la branche Master.
 
 _____________________________________________________________________________________________________________________________________
 
