@@ -9,6 +9,7 @@ import '../templates/creer.js';
 import '../annonces/annonces.js';
 import '../../../imports/conditionDeConnexion/un.html';
 import '../profil/modifierProfil.js';
+import '../templates/nouvmembres.js';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Template } from 'meteor/templating';
 import { Accounts } from 'meteor/accounts-base';

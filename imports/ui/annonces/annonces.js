@@ -6,6 +6,7 @@ import { ReactiveDict } from 'meteor/reactive-dict';
  
 import { Annonces } from '../../api/annonces.js';
 
+
 /*
 Template.annonces.onCreated(function bodyOnCreated() {
     this.state = new ReactiveDict();
@@ -51,3 +52,13 @@ Template.annonces.events({
    
   });
 
+  Template.accueil.events({
+    'click .grid-item1': function (event) {
+      event.preventDefault();
+      let annonceFavorise = Annonces.find('_id');
+      console.log(annonceFavorise);
+      Meteor.users.insert({
+        favorisationAnnonce: annonceFavorise,
+      });
+    },
+  });
