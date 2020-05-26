@@ -77,12 +77,12 @@ ________________________________________________________________________________
 
 Les principaux composants de l'application NUA sont :
 
-- Framework METEOR V. 1.10.2 et ses packages associés dont :
+1. Framework METEOR V. 1.10.2 et ses packages associés dont :
 * Mongo V. 1.10.0 pour la gestion de la base de données
 * Accounts-base, accounts-password et accounts-ui pour la gestion des comptes et accès des utilisateurs
-- Bootstrap 4.5.0 comme front-end toolkit pour la définition des pages
+2. Bootstrap 4.5.0 comme front-end toolkit pour la définition des pages
 
-- Git, Github et Gihub desktop pour le versioning de l'application ainsi que pour la coordination du codage par le team
+3. Git, Github et Gihub desktop pour le versioning de l'application ainsi que pour la coordination du codage par le team
 
 _____________________________________________________________________________________________________________________________________
 
@@ -125,5 +125,5 @@ ________________________________________________________________________________
 
 ## 8) Evolution du projet NUA :
 
-En fonction du temps à disposition des fontionnalités supplémentaires telles que définies dans le full-version design viendront s'ajouter à celles présentes dans la version prototype.
+En fonction du temps à disposition des fonctionnalités supplémentaires telles que définies dans le full-version design viendront s'ajouter à celles présentes dans la version prototype.
 
