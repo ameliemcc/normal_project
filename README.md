@@ -15,13 +15,15 @@ Le projet NUA est une application écrite avec le framework METEOR qui a pour bu
 NUA permet en effet à des personnes de s'inscrire dans ce réseau artistique afin de réaliser des projets artistiques et/ou de participer à la création de ces projets.
 Au moyen d'un système d'annonces il est en effet possible aux membres du réseau NUA de trouver des partenaires pouvant offrir certains services artistiques pour participer à la réalisation de 
 leurs projets artistiques.
+Initialement prévu pour les étudiants de l'Unil, le projet permettra par extension de devenir un véritable réseau professionel potentiellement utile à la sortie de la Faculté.
 
 Project abstract :
 
-The NUA project is a METEOR framework based application aimed to create, animate and manage an artistic network allowing members to produce artistics projects.
-NUA offers to persons the capability to subscribe to this artistic network and thus to produce artistic projects and/or participate to the related projects production in providing artistic services.
-Trough an ad-based system the NUA members will be able to find ad-hoc partners able to provide requested artistic services and thus to contribute to their artistic projects
-
+The NUA project is an application written with the METEOR framework which aims to create, animate and manage an artistic network allowing its members to produce artistic projects.
+NUA allows people to join this artistic network in order to realize artistic projects and / or to participate in the creation of these projects.
+By means of an announcement system, it is indeed possible for members of the NUA network to find partners who can offer certain artistic services to participate in the realization of
+their artistic projects.
+Initially planned for Unil students, the project will by extension become a real professional network potentially useful at the end of the Faculty.
 
 __________________________________________________________________________________
 
