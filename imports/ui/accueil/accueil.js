@@ -117,12 +117,38 @@ Template.accueil.events({
         alert('Veuillez reconfirmer votre mot de passe.');
       }
     } else {
-      alert('Votre mot de passe est trop court! Veuillez choisir un mot de passe de minimum 5 caractères. ');
+      alert('Votre mot de passe est trop court! Veuillez choisir un mot de passe de minimum 5 caractères.');
     }
   },
 });
 
 
-/* Pour la barre de recherche */
+
+
+
+/* Pour ajouter ce qui est favorisé aux favoris 
+Il faut que onClick, l'ID de l'annonce ou du membre soit récupéré et ajouter dans currentUser.
+
+
+Template.accueil.events({
+  'click #emptyHeart': function (event) {
+    event.preventDefault();
+    var membreFavorise = meteor.userId();
+    var annonceFavorise = 
+    users.insert({
+      favorisationMembre: membreFavorise,
+      favorisationAnnonce: annonceFavorise,
+    });
+    document.write('Favorisé !')
+  },
+
+});
+
+
+
+*/
+
+
+
 
 
