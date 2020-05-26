@@ -1,15 +1,15 @@
 # projet_groupe_1
 
-#titreProjet NUA : Networking Universitaire Artistique
+## Projet NUA : Networking Universitaire Artistique
 
-#titre#titreCours Unil : Programmation pour Internet II - Meteor.js (SP2020)
+## Cours Unil : Programmation pour Internet II - Meteor.js (SP2020)
 
 Professeur : Loïc Cattani
 Assistant : Loris Rimaz
 
 Groupe 1 : Amélie Mc Cormick, Rebecca Kneubuehler, Gavin Vinasi, Jacinto Fernandez
 
-#titre#titreRésumé du projet :
+## Résumé du projet :
 
 Le projet NUA est une application écrite avec le framework METEOR qui a pour but la création, l'animation et la gestion d'un réseau artistique permettant à ses membres de rencontrer et prendre contact avec d'autres artistes. 
 NUA permet en effet à des personnes de s'inscrire dans ce réseau artistique afin de réaliser des projets artistiques et/ou de participer à la création de ces projets.
@@ -17,7 +17,7 @@ Au moyen d'un système d'annonces, il est en effet possible aux membres du rése
 Initialement prévu pour les étudiants de l'Unil, le projet permettra par extension de devenir un véritable réseau professionel potentiellement utile à la sortie de la Faculté.
 L'utilisation de NUA est strictement soumise à l'inscription préliminaire en tant que membre du réseau.
 
-#titre#titreProject abstract :
+## Project abstract :
 
 The NUA project is an application written with the METEOR framework which aims to create, animate and manage an artistic network allowing its members to produce artistic projects.
 NUA allows people to join this artistic network in order to realize artistic projects and / or to participate in the creation of these projects.
@@ -28,7 +28,7 @@ The use of NUA is strictly subject to preliminary registration as a member of th
 
 _____________________________________________________________________________________________________________________________________
 
-#titrePlan de la documentation :
+## Plan de la documentation :
 
 1) Le projet NUA en bref
 2) Plan du projet NUA
@@ -41,7 +41,7 @@ ________________________________________________________________________________
 
 _____________________________________________________________________________________________________________________________________
 
-#titre1) Le projet NUA en bref 
+## 1) Le projet NUA en bref 
 
 Le projet NUA est une application écrite avec le framework METEOR et qui a pour but la création, l'animation et la gestion d'un réseau artistique permettant à ses membres de produire des projets artistiques. NUA permet en effet à des personnes de s'inscrire dans ce réseau artistique afin de réaliser des projets artistiques ou de participer à la création de ces projets.
 Au moyen d'un système d'annonces il est en effet possible aux membres du réseau NUA de trouver des partenaires pouvant offrir certains services artistiques pour participer à la réalisation de certains 
@@ -49,7 +49,7 @@ projets artistiques.
 
 _____________________________________________________________________________________________________________________________________
 
-#titre2) Plan du projet NUA :
+## 2) Plan du projet NUA :
 
 Le projet comprend les phases suivantes :
 
@@ -66,14 +66,14 @@ Le projet comprend les phases suivantes :
 
 _____________________________________________________________________________________________________________________________________
 
-#titre3) Design de l'application :
+## 3) Design de l'application :
 
 Le design de l'application a été fait à l'aide du logiciel Balsamiq Wireframes qui permet la création d'applications et la simulation des worflows correspondants. Le design de NUA qui a aussi servi de cahier des charges est disponible dans le fichier PDF : XXXXXX.
 Le design artistique a conduit au style de l'application qui est défini sous forme de charte graphique tel que figurant dans le fichier : YYYYYY.
 
 _____________________________________________________________________________________________________________________________________
 
-#titre4) Brève description de l'architecture de l'app. NUA :
+## 4) Brève description de l'architecture de l'app. NUA :
 
 Les principaux composants de l'application NUA sont :
 
@@ -86,7 +86,7 @@ Les principaux composants de l'application NUA sont :
 
 _____________________________________________________________________________________________________________________________________
 
-#titre5) Pages et fonctionnalités principales de l'application NUA :
+## 5) Pages et fonctionnalités principales de l'application NUA :
 
 Les pages principales de la version prototype disponibles sont :
 
@@ -110,20 +110,20 @@ Les fonctionnalités principales sont :
 
 _____________________________________________________________________________________________________________________________________
 
-#titre6) Tests et validation de l'application :
+## 6) Tests et validation de l'application :
 
 Une base de données de tests a tout d'abord été créée à l'aide des fonction console de Mongdb pour permettre les premiers tests. Ensuite chaque membre du groupe a testé ses pages indépendamment sur ses branches respectives. Dès que le routing et les fonctions de création d'annonces et de membres ont été disponibles, les tests d'intégration et des fonctionnalités ont été exécutées sur la branche Master.
 
 _____________________________________________________________________________________________________________________________________
 
-#titre7) Documentation et mode d'emploi :
+## 7) Documentation et mode d'emploi :
 
 L'application NUA est "self-explanatory" et l'information fournie sur ce README fait office de mode d'emploi.
 
 _____________________________________________________________________________________________________________________________________
 
 
-#titre8) Evolution du projet NUA :
+## 8) Evolution du projet NUA :
 
 En fonction du temps à disposition des fontionnalités supplémentaires telles que définies dans le full-version design viendront s'ajouter à celles présentes dans la version prototype.
 
