@@ -50,11 +50,11 @@ projets artistiques.
 
 Le projet comprend les phases suivantes :
 
-2.1 Cahier des charges application complète (sous forme de wireframes, voir fichier PDF)
-2.2 Design artistique (sous forme de wireframes, voir fichier PDF)
-2.3 Définition d'une version prototype, sous ensemble de la fulle-version, pour tenir compte du temps à disposition
-2.3 Design, programmation et tests des pages principales selon wirframes correespondants à la version prototype et en parallèle les unes des autres
-2.4 Design et création avec la console d'un base de données initiale pour tests
+2.1 Cahier des charges de l'application complète (sous forme de wireframes, voir fichier PDF : XXXXXX)
+2.2 Design artistique a été défini sous forme d'une charte graphique (voir fichier : YYYYYY)
+2.3 Définition d'une version prototype, sous ensemble de la full-version, pour tenir compte du temps à disposition
+2.3 Design, programmation et tests des pages principales selon wireframes correspondant à la version prototype et en parallèle les unes des autres
+2.4 Design et création avec la console d'une base de données initiale pour tests
 2.5 Intégration des pages principales avec la création du workflow routing
 2.6 Test de routing des pages principales
 2.7 Incorporation des fonctions de création de membres et d'annonces dans la base de données
@@ -63,9 +63,32 @@ Le projet comprend les phases suivantes :
 
 3) Design de l'application :
 
+Le design de l'application a été fait à l'aide du logiciel Balsamiq Wireframes qui permet la création d'applications et la simulation des worflows correspondants. Le design de NUA qui a aussi servi de cahier des charges est disponible dans le fichier PDF : XXXXXX.
+Le design artistique a conduit au style de l'application qui est défini sous forme de charte graphique tel que figurant dans le fichier : YYYYYY.
+
 4) Brève description de l'architecture de l'app. NUA :
 
+Les principaux composants de l'application NUA sont :
+
+- Framework METEOR V. 1.10.2 et ses packages associés dont :
+- Mongo V. 1.10.0 pour la gestion de la base de données
+- Accounts-base, accounts-password et accounts-ui pour la gestion des comptes et accès des utilisateurs
+- Bootstrap 4.5.0 comme front-end toolkit pour la définition des pages
+
+- Git, Github et Gihub desktop pour le versioning de l'application ainsi que pour la coordination du codage par le team
+
+
+
 5) Pages et fonctionnalités principales de l'application NUA :
+
+Les pages principales de la version prototype disponibles sont :
+
+- Page de lllogin et création de comptes
+- Page d'accueil
+- Page d'affichage des favoris d'un membre
+- Page création de compte
+- Page création d'annonce
+
 
 6) Tests et validation de l'application :
 
