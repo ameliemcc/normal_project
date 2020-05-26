@@ -122,3 +122,6 @@ Template.accueil.events({
 });
 
 
+/* Pour la barre de recherche */
+
+
