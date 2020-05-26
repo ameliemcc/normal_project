@@ -16,6 +16,7 @@ NUA permet en effet à des personnes de s'inscrire dans ce réseau artistique af
 Au moyen d'un système d'annonces il est en effet possible aux membres du réseau NUA de trouver des partenaires pouvant offrir certains services artistiques pour participer à la réalisation de 
 leurs projets artistiques.
 Initialement prévu pour les étudiants de l'Unil, le projet permettra par extension de devenir un véritable réseau professionel potentiellement utile à la sortie de la Faculté.
+L'utilisation de NUA est strictement soumise à l'inscription préliminaire en tant que membre du réseau.
 
 Project abstract :
 
@@ -24,6 +25,7 @@ NUA allows people to join this artistic network in order to realize artistic pro
 By means of an announcement system, it is indeed possible for members of the NUA network to find partners who can offer certain artistic services to participate in the realization of
 their artistic projects.
 Initially planned for Unil students, the project will by extension become a real professional network potentially useful at the end of the Faculty.
+The use of NUA is strictly subject to preliminary registration as a member of the network.
 
 _____________________________________________________________________________________________________________________________________
 
