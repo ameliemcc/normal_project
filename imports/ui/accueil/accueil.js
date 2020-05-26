@@ -31,7 +31,6 @@ Template.accueil.helpers({
     });
       }
 
-  
 
   Template.accueil.helpers({
     annonces: () => {

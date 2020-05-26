@@ -11,10 +11,9 @@ Groupe 1 : Amélie Mc Cormick, Rebecca Kneubuehler, Gavin Vinasi, Jacinto Fernan
 
 Résumé du projet :
 
-Le projet NUA est une application écrite avec le framework METEOR qui a pour but la création, l'animation et la gestion d'un réseau artistique permettant à ses membres de produire des projets artistiques. 
+Le projet NUA est une application écrite avec le framework METEOR qui a pour but la création, l'animation et la gestion d'un réseau artistique permettant à ses membres de rencontrer et prendre contact avec d'autres artistes. 
 NUA permet en effet à des personnes de s'inscrire dans ce réseau artistique afin de réaliser des projets artistiques et/ou de participer à la création de ces projets.
-Au moyen d'un système d'annonces il est en effet possible aux membres du réseau NUA de trouver des partenaires pouvant offrir certains services artistiques pour participer à la réalisation de 
-leurs projets artistiques.
+Au moyen d'un système d'annonces, il est en effet possible aux membres du réseau NUA de trouver des partenaires pouvant offrir certains services artistiques pour participer à la réalisation de leurs projets artistiques.
 Initialement prévu pour les étudiants de l'Unil, le projet permettra par extension de devenir un véritable réseau professionel potentiellement utile à la sortie de la Faculté.
 
 Project abstract :
