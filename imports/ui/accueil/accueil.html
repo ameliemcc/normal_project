@@ -5,11 +5,11 @@
                 <p id="mainTitle">NUA</p>
                 <p id="underTitle">Networking Universitaire Artistique</p>
               <div id="user">
-           {{#if CurrentUser}}
-           <button id="logout">Déconnexion</button>
-           {{else}}
-          <button> {{> loginButtons}}</button> 
-           {{/if}}
+
+                {{#if currentUser}}
+                Bienvenue {{utilisateur}} !
+                {{/if}}
+       
 
     
               </div>
