@@ -96,10 +96,3 @@ Template.app_body.events({
   },
 });
 
-
-Template.login.events({
-  'click #creation'(event){
-          event.preventDefault();
-          FlowRouter.go('creation');
-  },
-  });

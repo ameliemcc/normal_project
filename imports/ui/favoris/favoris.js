@@ -9,7 +9,7 @@ import './favoris.html';
 
 
 Template.favoris.helpers({
-
+  
   annonces () {
     return Annonces.find({}).fetch();
   },
