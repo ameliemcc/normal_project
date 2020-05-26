@@ -25,7 +25,7 @@ By means of an announcement system, it is indeed possible for members of the NUA
 their artistic projects.
 Initially planned for Unil students, the project will by extension become a real professional network potentially useful at the end of the Faculty.
 
-__________________________________________________________________________________
+_________________________________________________________________________________________________________
 
 Plan de la documentation :
 
@@ -38,6 +38,7 @@ Plan de la documentation :
 7) Documentation et mode d'emploi 
 8) Evolution du projet NUA 
 
+_________________________________________________________________________________________________________
 
 1) Le projet NUA en bref 
 
