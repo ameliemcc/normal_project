@@ -20,6 +20,6 @@ Template.favoris.helpers({
   profile () {
     return Meteor.users.profile;
   },
-  
+
 });
 
