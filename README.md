@@ -1,5 +1,12 @@
 # projet_groupe_1
 
-Ceci est une première tentative d'utilisation du fichier README
+Projet NUA : Networking Universitaire Artistique
 
-Et je rajoute cette ligne pour tester le bon fonctionnement de Github Desktop
+Cours Unil : Programmation pour Internet II - Meteor.js (SP2020)
+
+Professeur : Loïc Cattani
+Assistant : Loris Rimaz
+
+Groupe 1 : Amélie Mc Cormick, Rebecca Kneubuehler, Gavin Vinasi,         Jacinto Fernandez
+___________________________________________________________________________
+
