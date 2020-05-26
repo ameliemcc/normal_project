@@ -10,7 +10,7 @@
      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
      crossorigin="anonymous">
   </head>
-
+  <form>
   <div class="d-flex">
     <div>
         <h3>Créer un Compte</h3>
@@ -27,7 +27,7 @@
     <input type="button" value="Ajouter">
 </div> 
 </div>
-<form class="new-membre">
+
     <div class="form-row">
     <div class="form-group col-md-3">
       <label for="nom">Nom<span class="text-danger">*</span></label>
@@ -37,86 +37,48 @@
       <label for="prenom">Prénom<span class="text-danger">*</span></label>
       <input type="text" class="form-control" id="prenom" name=prenom>
     </div>
+
   </div><br>
   <div class="form-inline">
     <div class="form-group col-md-3">
-      <label for="inputEmail4">Adresse e-mail<span class="text-danger">*</span></label>
-      <input type="email" class="form-control" id="inputEmail4">
+      <label for="inputEmail4">Adresse email de contact<span class="text-danger">*</span></label>
+      <input type="email" class="form-control" id="inputEmail4" name="inputEmail4">
     </div>
     <div class="form-group col-md-3">
       <label for="inputPassword4">Mot de passe<span class="text-danger">*</span></label>
-      <input type="password" class="form-control" id="inputPassword4">
+      <input type="password" class="form-control" id="inputPassword4" name="inputPassword4">
     </div>
     <div class="form-group col-md-3">
       <label for="inputPasswordCheck">Confirmer le mot de passe<span class="text-danger">*</span></label>
-      <input type="password" class="form-control" id="inputPasswordCheck">
+      <input type="password" class="form-control" id="inputPasswordCheck" name="inputPasswordCheck">
     </div>
     </div><br>
   <div class="form-inline">
     <div class="form-group col-md-3">
-      <label for="localite">Localité<span class="text-danger">*</span></label>
-      <input type="text" name="local" class="form-control" id="localite">
-    </div>
-    <div class="form-group col-sm-1">
-      <label for="npa">NPA<span class="text-danger">*</span></label>
-      <input type="number" name="code" class="form-control" id="npa" min="1000">
+      <label for="localite">Dans quelle région/localité vous situez-vous/êtes vous prêt.e à vous déplacer?<span class="text-danger">*</span></label>
+      <input type="text" name="localite" class="form-control" id="localite">
     </div>
     </div><br>
   <div class="form-inline">
     <div class="form-group col-md-2">
-      <label for="profesison">Profession<span class="text-danger">*</span></label>
-      <select id="profession" class="form-control">
-        <option selected>Sélectionner...</option>
-        <option>Réalisateur</option>
-        <option>Photographe</option>
-        <option>Musicien</option>
-        <option>Chanteur</option>
-        <option>Cameraman</option>
-        <option>Perchiste</option>
-        <option>Mixeur</option>
-        <option>Monteur / Editeur</option>
-        <option>Acteur</option>
-        <option>Cascadeur</option>
-        <option>Compositeur</option>
-        <option>Boomer</option>
-        <option>Graphiste</option>
-        <option>Scénariste</option>
-      </select>
+      <strong>Domaine d'activité :</strong>
+      <label for="formControlRange">Quelles sont vos complétences ou les fonctions que vous cherchez à occuper ?</label>
+      <label for="formControlRange">Par exemple : photographe, réalisateur.trice, cameraman, perchiste, monteur.euse, maquilleur.euse, acteur.trice,... </label>
+      <br>
+      <br>
+      <textarea class="form-control" rows="5" id="roles" name="roles" placeholder=" "></textarea>
+  
     </div> 
-  <div class="form-group col-md-2">
-    <label for="sexe">Sexe<span class="text-danger">*</span></label>
-    <select id="sexe" class="form-control">
-      <option selected></option>
-      <option>Femme</option>
-      <option>Homme</option>
-      <option>Autre</option>
-    </select>
-  </div> </div>
+   </div>
   <br>
   <div class="form-inline">
     <label for="example-date-input" class="col-2 col-form-label">Date de naissance<span class="text-danger">*</span></label>
     <div class="col-md-2.5">
-    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+    <input class="form-control" type="texte" name="dateInput" id="dateInput">
     </div>
     </div><br>
     <div></div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Biographie</label>
-    <textarea placeholder="Donner d'information utile pour les personnes qui consulteraient votre compte (motivation, parcours, formation....)"
-    class="form-control col-md-6" id="exampleFormControlTextarea1" rows="6"></textarea>
-    </div>
-  <div class="form-group inline">
-    <label for="basic-url">Piece jointes</label>
-  <div class="input-group input-group-sm mb-3 w-25">
-    <input type="text" class="form-control" placeholder="URL" id="basic-url" aria-describedby="basic-addon3">
-    </div>
-  <div class="input-group input-group-sm mb-3 w-25">
-    <input type="text" class="form-control" placeholder="URL" id="basic-url" aria-describedby="basic-addon3">
-  </div>
-  <div class="input-group input-group-sm mb-3 w-25">
-    <input type="text" class="form-control" placeholder="URL" id="basic-url" aria-describedby="basic-addon3">
-  </div>
-<button id ="submit" type="submit" class="btn btn-primary">Enregistrer</button>  
-</div> 
+
+<button id ="logNow" >Enregistrer</button>  
 </form>
 </template>
