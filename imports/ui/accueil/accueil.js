@@ -12,9 +12,9 @@ import '../templates/nouvmembres.html';
 
 Template.accueil.helpers({
   annonces: () => Annonces.find({}, { sort: { createdAt: -1 } }),
-
+  
   utilisateurs () {
-    return Meteor.users.find({}).fetch();
+    return Meteor.users.find({}, { sort: { createdAt: -1 } }),
   },
   profile () {
     return Meteor.users.profile;
