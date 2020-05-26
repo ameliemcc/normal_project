@@ -48,6 +48,19 @@ projets artistiques.
 
 2) Plan du projet NUA :
 
+Le projet comprend les phases suivantes :
+
+2.1 Cahier des charges application complète (sous forme de wireframes, voir fichier PDF)
+2.2 Design artistique (sous forme de wireframes, voir fichier PDF)
+2.3 Définition d'une version prototype, sous ensemble de la fulle-version, pour tenir compte du temps à disposition
+2.3 Design, programmation et tests des pages principales selon wirframes correespondants à la version prototype et en parallèle les unes des autres
+2.4 Design et création avec la console d'un base de données initiale pour tests
+2.5 Intégration des pages principales avec la création du workflow routing
+2.6 Test de routing des pages principales
+2.7 Incorporation des fonctions de création de membres et d'annonces dans la base de données
+2.8 Activation des fonctions de création d'accounts avec la fonctionnalité METEOR Account-UI
+2.9 Tests d'intégration des fonctionnalités de la version prototype
+
 3) Design de l'application :
 
 4) Brève description de l'architecture de l'app. NUA :
