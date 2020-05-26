@@ -6,21 +6,6 @@ import { ReactiveDict } from 'meteor/reactive-dict';
  
 import { Annonces } from '../../api/annonces.js';
 
-
-/*
-Template.annonces.onCreated(function bodyOnCreated() {
-    this.state = new ReactiveDict();
-  });
-  
- 
-Template.annonces.helpers({
-  annonces() {
-    const instance = Template.instance();
-    return Annonces.find({}, { sort: { createdAt: -1 } });
-  },
-});
-*/
-
 Template.annonces.events({
     'submit .new-annonce': function(event) { 
       // Prevent default browser form submit
@@ -45,9 +30,7 @@ Template.annonces.events({
       });
    
       // Clear form
-      target.title.value = '';
-      target.description.value = '';
-      FlowRouter.go('accueil');
+      setTimeout(() => FlowRouter.go('accueil'), 200);
     },
    
   });

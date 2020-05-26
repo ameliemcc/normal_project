@@ -5,30 +5,24 @@
 
 <button id='modifierProfil'>Modifier</button>
 
-<box id="boxInformationsPersonnelles">
+    <box id="boxInformationsPersonnelles">
+        <br>
     <h3>Informations personnelles</h3>
-    <p>{{currentUser.username}}</p>
-    <p>{{currentUser.profile.nom}}</p>
-    <p>Localité {{currentUser.localite}}</p>
-    <p>{{currentUser.roles}}</p>
-    <p>Année de naissance{{currentUser.dateInput}}</p>
-
-</box>
+    
+    <h4 style="color:#008B8B ;">{{currentUser.profile.nom}} {{currentUser.profile.prenom}}</h4>
+    <p>Contact : {{currentUser.username}}</p>
+    <p>Région/localité : {{currentUser.profile.localite}}</p>
+    <p>Compétences/fonctions : {{currentUser.profile.roles}}</p>
+    <p>Année de naissance : {{currentUser.profile.dateInput}}</p>
+    </box>
   
-<box id="boxLiensEtPiecesJointes">
-    <h3>Liens externes</h3>
-    <p>Mon site internet : <a href="https://www.cbyrbk.com/">Captured by RBK</a></p> <!-- Il faut faire le lien avec les informations entrées par l'utilisateur  --> 
-    <p>Ma chaîne Youtube : <a href="https://www.youtube.com/channel/UCn6T7iM9RyqVPN6b2TFinVw"> CbyRBK</a></p> <!-- Il faut faire le lien avec les informations entrées par l'utilisateur  --> 
-    <h3>Pièces jointes</h3>
-  <p>Pièce jointe 1 : <a href="#cv">Mon CV</a></p> <!-- Il faut faire le lien avec les informations entrées par l'utilisateur  --> 
-  <p>Pièce jointe 2 : <a href="#lettreDeMotivation">Ma lettre de motivation</a></p> <!-- Il faut faire le lien avec les informations entrées par l'utilisateur  --> 
-  <p>Pièce jointe 3 : <a href="#diplomeDeDrone">Mon diplôme de drone</a> </p> <!-- Il faut faire le lien avec les informations entrées par l'utilisateur  --> 
-</box>
-  
-<box id="boxMaBiographie">
-    <h3>Ma biographie</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi architecto eius corporis aspernatur temporibus non. Voluptas aspernatur laboriosam at iusto, quo et ducimus inventore saepe harum reiciendis animi unde aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptates, maxime praesentium quidem blanditiis rerum optio laboriosam perferendis non ipsam reiciendis quae, in incidunt cum commodi debitis nulla! Voluptatum, exercitationem!</p> <!-- Il faut faire le lien avec les informations entrées par l'utilisateur  --> 
-</box>
-
+    <box id="boxLiensEtPiecesJointes">
+        <br>
+        <br>
+        <br>
+       
+    <h5>Commentaires</h5>
+    <p>{{currentUser.profile.commentaire}}</p>
+    </box>
 
 </template>
