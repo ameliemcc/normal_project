@@ -6,15 +6,23 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { Annonces } from '../../api/annonces.js';
 import '../annonces/annonces.js';
 import '../annonces/templateAnnonce.html';
-import '../body/body.js'
+import '../body/body.js';
+import '../templates/nouvmembres.html';
 
 
 Template.accueil.helpers({
-  'annonces': () => Annonces.find({}, { sort: { createdAt: -1 } }),
+  annonces: () => Annonces.find({}, { sort: { createdAt: -1 } }),
+
+  utilisateurs () {
+    return Meteor.users.find({}).fetch();
+  },
+  profile () {
+    return Meteor.users.profile;
+  },
 
 });
-  /*
-  });*/
+/*
+  }); */
 
 /*
   Template.accueil.helpers({
@@ -70,12 +78,12 @@ Template.accueil.events({
 
   'click #plusAnnonce' (event) {
     event.preventDefault();
-    FlowRouter.go('plusAnnonces')
+    FlowRouter.go('plusAnnonces');
   },
 
   'click #modifierProfil'(event) {
     event.preventDefault();
-    FlowRouter.go('modifierProfil')
+    FlowRouter.go('modifierProfil');
   },
 
   'click #submit'(event) {
