@@ -199,7 +199,7 @@
 #nvlleAnnonce{
   border-radius: 5px;
   border-color: #333;
-  position: relative;
+  float:right;
   top: -60px;
   left: 1125px;
 }
