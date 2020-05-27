@@ -5,7 +5,10 @@
             <p id="underTitle">Networking Universitaire Artistique</p>
           <div id="user">
             {{#if currentUser}}
-            Bienvenue {{utilisateur}} !
+          
+            <button id="logout">Déconnexion</button>
+            {{else}}
+            
             {{/if}}
           </div>
         </div>
@@ -19,7 +22,7 @@
             <button id="profil"><i class="fa fa-fw fa-user"></i>&nbsp;Mon profil</button>
            
         </box>
-        <button id="logout">Déconnexion</button>
+   
      
     </div>
    
