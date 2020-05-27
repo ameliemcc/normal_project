@@ -13,35 +13,37 @@
   <form>
   <div class="d-flex">
     <div>
-        <h3>Créer un Compte</h3>
+        <h3>Créer un compte</h3>
     </div>
-    <div class="d-flex -">
-        <p>champs obligatoires <span class="text-danger">*</span></p>
+    
+    <div class="d-flex">
+        <p>Champs obligatoires <span class="text-danger">*</span></p>
     </div>
 </div>
 <div class="d-flex align-items-end justify-content-end">
- <div class="d-flex align-items-end justify-content-end">Photo de profil</div>
+ <div id='photoProfil' class="d-flex align-items-end justify-content-end">Photo de profil</div>
   <div>
-    <img src="https://plus.maths.org/issue42/outerspace/square.png" 
+    <img id='image' src="https://plus.maths.org/issue42/outerspace/square.png" 
     alt="photoDeProfil" width=100px> 
-    <input type="button" value="Ajouter">
+    <input id='ajouterPhoto' type="button" value="Ajouter">
 </div> 
 </div>
 
     <div class="form-row">
-    <div class="form-group col-md-3">
+    <div id='nom' class="form-group col-md-3">
       <label for="nom">Nom<span class="text-danger">*</span></label>
       <input type="text" class="form-control" id="nom" name="nom">
     </div>
     <div class="form-group col-md-3">
-      <label for="prenom">Prénom<span class="text-danger">*</span></label>
+      <label id='prenom' for="prenom">Prénom<span class="text-danger">*</span></label>
       <input type="text" class="form-control" id="prenom" name=prenom>
     </div>
+    
 
   </div><br>
   <div class="form-inline">
     <div class="form-group col-md-3">
-      <label for="inputEmail4">Adresse email de contact<span class="text-danger">*</span></label>
+      <label id='adresseEmail' for="inputEmail4">Adresse email<span class="text-danger">*</span></label>
       <input type="email" class="form-control" id="inputEmail4" name="inputEmail4">
     </div>
     <div class="form-group col-md-3">
@@ -55,32 +57,31 @@
     </div><br>
   <div class="form-inline">
     <div class="form-group col-md-3">
-      <label for="localite">Dans quelle région/localité vous situez-vous/êtes vous prêt.e à vous déplacer?<span class="text-danger">*</span></label>
+      <label id='localite' for="localite">Dans quelle région/localité vous situez-vous?<span class="text-danger">*</span></label>
       <input type="text" name="localite" class="form-control" id="localite">
     </div>
-    </div><br>
-  <div class="form-inline">
+    </div>
+    <div class="form-inline">
+      <label id='anneeNaissance' for="example-date-input" class="col-2 col-form-label">Année de naissance<span class="text-danger">*</span></label>
+      <div class="col-md-2.5">
+      <input class="form-control" type="texte" name="dateInput" id="dateInput">
+      </div>
+  <div id='domaineActivite' class="form-inline">
     <div class="form-group col-md-2">
       <strong>Domaine d'activité :</strong>
       <label for="formControlRange">Quelles sont vos complétences ou les fonctions que vous cherchez à occuper ?</label>
-      <label for="formControlRange">Par exemple : photographe, réalisateur.trice, cameraman, perchiste, monteur.euse, maquilleur.euse, acteur.trice,... </label>
-      <br>
-      <br>
-      <textarea class="form-control" rows="5" id="roles" name="roles" placeholder=" "></textarea>
+  
+      <textarea class="form-control" rows="5" id="roles" name="roles" placeholder="Par exemple : photographe, réalisateur.trice, cameraman, perchiste, monteur.euse, maquilleur.euse, acteur.trice,..."></textarea>
   
     </div> 
    </div>
   <br>
-  <div class="form-inline">
-    <label for="example-date-input" class="col-2 col-form-label">Année de naissance<span class="text-danger">*</span></label>
-    <div class="col-md-2.5">
-    <input class="form-control" type="texte" name="dateInput" id="dateInput">
-    </div>
+  
     <textarea  class="form-control" rows="1" name="commentaire" id="commentaire" placeholder="Commentaires additionnels"></textarea>
 
     </div><br>
     <div></div>
 
-<button id ="logNow" >Enregistrer</button>  
+<button id ="logNow">Enregistrer</button>  
 </form>
 </template>
