@@ -54,8 +54,8 @@ ________________________________________________________________________________
 
 Le projet comprend les phases suivantes :
 
-1.  Cahier des charges de l'application complète (sous forme de wireframes, voir fichier PDF : XXXXXX)
-2.  Design artistique a été défini sous forme d'une charte graphique (voir fichier : YYYYYY)
+1.  Cahier des charges de l'application complète (sous forme de wireframes, voir fichier PDF : DesignNUA.pdf)
+2.  Design artistique a été défini sous forme d'une charte graphique (voir fichier : CHARTE_GRAPHIQUE_DE_NUA.pdf)
 3.  Définition d'une version prototype, sous ensemble de la full-version, pour tenir compte du temps à disposition
 4.  Design, programmation et tests des pages principales selon wireframes correspondant à la version prototype et en parallèle les  unes des autres
 5.  Design et création avec la console d'une base de données initiale pour tests
@@ -69,8 +69,8 @@ ________________________________________________________________________________
 
 ## 3) Design de l'application :
 
-Le design de l'application a été fait à l'aide du logiciel Balsamiq Wireframes qui permet la création d'applications et la simulation des worflows correspondants. Le design de NUA qui a aussi servi de cahier des charges est disponible dans le fichier PDF : XXXXXX.
-Le design artistique a conduit au style de l'application qui est défini sous forme de charte graphique tel que figurant dans le fichier : YYYYYY.
+Le design de l'application a été fait à l'aide du logiciel Balsamiq Wireframes qui permet la création d'applications et la simulation des worflows correspondants. Le design de NUA qui a aussi servi de cahier des charges est disponible dans le fichier PDF : DesignNUA.pdf.
+Le design artistique a conduit au style de l'application qui est défini sous forme de charte graphique tel que figurant dans le fichier : CHARTE_GRAPHIQUE_DE_NUA.pdf.
 
 _____________________________________________________________________________________________________________________________________
 
@@ -83,6 +83,8 @@ Les principaux composants de l'application NUA sont :
 * Accounts-base, accounts-password et accounts-ui pour la gestion des comptes et accès des utilisateurs
 2. Bootstrap 4.5.0 comme front-end toolkit pour la définition des pages
 
+3. Le style de l'application est contenu dans le fichier main.css
+4. Certains éléments (icônes) sont tirés de la librairie Google disponible sous : https://fonts.googleapis.com/icon?family=Material+Icons
 3. Git, Github et Gihub desktop pour le versioning de l'application ainsi que pour la coordination du codage par le team
 
 _____________________________________________________________________________________________________________________________________
