@@ -54,8 +54,8 @@ ________________________________________________________________________________
 
 Le projet comprend les phases suivantes :
 
-1.  Cahier des charges de l'application complète (sous forme de wireframes, voir fichier PDF : DesignNUA.pdf)
-2.  Design artistique a été défini sous forme d'une charte graphique (voir fichier : CHARTE_GRAPHIQUE_DE_NUA.pdf)
+1.  Cahier des charges de l'application complète (sous forme de wireframes, voir fichier PDF : DesignNUA.pdf
+2.  Design artistique a été défini sous forme d'une charte graphique (voir fichier : CHARTE_GRAPHIQUE_DE_NUA.pdf
 3.  Définition d'une version prototype, sous ensemble de la full-version, pour tenir compte du temps à disposition
 4.  Design, programmation et tests des pages principales selon wireframes correspondant à la version prototype et en parallèle les  unes des autres
 5.  Design et création avec la console d'une base de données initiale pour tests
