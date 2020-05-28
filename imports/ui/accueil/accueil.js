@@ -8,6 +8,8 @@ import '../annonces/annonces.js';
 import '../annonces/templateAnnonce.html';
 import '../body/body.js';
 import '../templates/nouvmembres.html';
+import '../templates/accannonce_grid.html';
+import '../templates/accprofils_grid.html';
 
 
 Template.accueil.helpers({
