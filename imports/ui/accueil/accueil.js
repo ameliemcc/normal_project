@@ -38,6 +38,7 @@ Template.accueil.events({
   'click #logout'(event) {
     event.preventDefault();
     Meteor.logout();
+    FlowRouter.go('un');
   },
   'click #nvlleAnnonce'(event) {
     event.preventDefault();
@@ -55,16 +56,3 @@ Template.accueil.events({
   },
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
