@@ -11,7 +11,7 @@ import './favoris.html';
 Template.favoris.helpers({
 
   annonces: () => Annonces.find({}, { sort: { createdAt: -1 } }),
-
+  
   utilisateurs () {
     return Meteor.users.find({}).fetch();
   },
