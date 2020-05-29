@@ -15,6 +15,6 @@ const memIndex = new Index({
 });
 
 Tracker.autorun(function () {
-  const cursor = listAnnIndex.search('ggg');
-  console.log(listAnnIndex.search('ggg')
+  const cursor = memIndex.search('ggg');
+  console.log(memIndex.search('ggg')
 });
