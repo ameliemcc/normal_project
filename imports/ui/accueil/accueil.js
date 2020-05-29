@@ -57,4 +57,9 @@ Template.accueil.events({
     FlowRouter.go('modifierProfil');
   },
 
+  'click #favoris_border'(event) {
+    event.preventDefault();
+    window.alert("Click on favoris");
+  },
+
 });
