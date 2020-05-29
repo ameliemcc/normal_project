@@ -11,7 +11,7 @@ Template.newmemb.events({
     alert(currmemb);
     Meteor.users.update(
       {_id: Meteor.userId() },
-      {$push: {"profile.fav_personnee": this._id}}
+      {$push: {"profile.fav_personne": this._id}}
     )
     },
 
