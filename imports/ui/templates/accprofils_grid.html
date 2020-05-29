@@ -1,7 +1,7 @@
     <!--Start definition template Profils--> 
 
     <template name="newmemb">
-        <div  class="col-md-2" >
+        <div  class="col-md-3" >
                 
             
             <img src="https://plus.maths.org/issue42/outerspace/square.png" alt="photoDeProfil" width=130px>
@@ -12,8 +12,10 @@
                 <li>{{profile.sexe}}</li>
                 <li>{{profile.nom}} {{profile.prenom}}</li>
                 <p>Région/localité : {{profile.localite}}</p>
+                <p>Date de naissance : {{profile.dateInput}}</p>
+                <p>Genre: {{profile.genre}} </p>
                 <p>Compétences/fonctions : {{profile.roles}}</p>
-                <p>Année de naissance : {{profile.dateInput}}</p>
+                <p>Commentaires: {{profile.commentaires}}</p>
 
             </ul>
                          

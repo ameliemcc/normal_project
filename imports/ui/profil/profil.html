@@ -2,9 +2,6 @@
    
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-
-<button id='modifierProfil'>Modifier</button>
-
     <box id="boxInformationsPersonnelles">
         <br>
     <h3>Informations personnelles</h3>
@@ -13,7 +10,8 @@
     <p>Contact : {{currentUser.username}}</p>
     <p>Région/localité : {{currentUser.profile.localite}}</p>
     <p>Compétences/fonctions : {{currentUser.profile.roles}}</p>
-    <p>Année de naissance : {{currentUser.profile.dateInput}}</p>
+    <p>Date de naissance : {{currentUser.profile.dateInput}}</p>
+    <p>Genre : {{currentUser.profile.genre}}</p>
     </box>
   
     <box id="boxLiensEtPiecesJointes">
@@ -24,5 +22,5 @@
     <h5>Commentaires</h5>
     <p>{{currentUser.profile.commentaire}}</p>
     </box>
-
+    <button id="supprimerCompte">Supprimer définitivement le compte</button>
 </template>

@@ -103,9 +103,10 @@
   top: -142px;
   left: 339px;
 }
+
 #dateInput{
   position: relative;
-  width: 100px;
+  width: auto;
 }
 #domaineActivite{
   position: relative;
@@ -535,15 +536,16 @@ li a.active{
   left: 0px;
 }
 
-#modifierProfil{
+#supprimerCompte{
   background-color: #333;
   color: white;
   border-radius: 5px;
-  position: absolute;
-  top: 215px;
-  left: 1174px;
+  float: right;
+  margin: 10px;
+  size: 30px;
+  
 }
-#modifierProfil:hover{
+#supprimerCompte:hover{
   background-color: #008B8B;
 }
 

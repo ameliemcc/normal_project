@@ -48,6 +48,7 @@ Template.creation.events({
     const roles = document.getElementById('roles').value;
     const dateInput = document.getElementById('dateInput').value;
     const commentaire = document.getElementById('commentaire').value;
+    const genre = document.getElementById('genre').value;
     //  let url = document.getElementById('basic-url').value;
     if (mdp.length > 4) {
       if (mdp === mdpCheck) {
@@ -63,6 +64,7 @@ Template.creation.events({
                 roles,
                 dateInput,
                 commentaire,
+                genre,
               },
             }, (error) => {
               if (error) {

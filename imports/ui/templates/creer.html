@@ -60,16 +60,24 @@
       <input type="text" name="localite" class="form-control" id="localite">
   </div>
   <div class="form-group col-md-10">
-    <label for="localite">Votre année de naissance<span class="text-danger">*</span></label>
-    <input type="number" name="localite" class="form-control" id="dateInput">
+    <label for="localite">Votre date de naissance<span class="text-danger">*</span></label>
+    <input class="form-control" type="date" value="1999-08-19" id="dateInput">
   </div>
-        
+  <div class="form-group col-md-2">
+  <label for="sexe">Genre</label>
+        <select id="genre" class="form-control">
+          <option selected></option>
+          <option>Femme</option>
+          <option>Homme</option>
+          <option>Autre</option>
+        </select>
+      </div> 
    
     <div class="form-inline">
   <div id='domaineActivite' class="form-inline">
     <div >
       <strong>Domaine d'activité :</strong>
-      <label for="formControlRange">Quelles sont vos complétences ou les fonctions que vous cherchez à occuper ?</label>
+      <label for="formControlRange">Quelles sont vos compétences ou les fonctions que vous cherchez à occuper ?</label>
       <textarea class="form-control" rows="5" id="roles" name="roles" placeholder="Par exemple : photographe, réalisateur.trice, cameraman, perchiste, monteur.euse, maquilleur.euse, acteur.trice,..."></textarea>
   
     </div> 
@@ -77,8 +85,9 @@
   <br>
     <textarea  class="form-control" rows="1" name="commentaire" id="commentaire" placeholder="Commentaires additionnels"></textarea>
     <button id ="logNow">Enregistrer</button> 
+
     </div><br>
-    <div> </div>
+
 
 
 </form>

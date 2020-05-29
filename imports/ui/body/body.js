@@ -8,12 +8,12 @@ import '../login/login.js';
 import '../templates/creer.js';
 import '../annonces/annonces.js';
 import '../../../imports/conditionDeConnexion/un.html';
-import '../profil/modifierProfil.js';
 import '../templates/nouvmembres.js';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Template } from 'meteor/templating';
 import { Accounts } from 'meteor/accounts-base';
 import { Membres } from "../../api/membres.js";
+import { Meteor } from 'meteor/meteor';
 
 
 Template.app_body.helpers({
@@ -46,11 +46,6 @@ Template.app_body.events({
   'click #plusAnnonce' (event) {
     event.preventDefault();
     FlowRouter.go('plusAnnonces')
-  },
-  
-  'click #modifierProfil'(event) {
-    event.preventDefault();
-    FlowRouter.go('modifierProfil')
   },
 });
 
