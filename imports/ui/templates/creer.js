@@ -3,7 +3,8 @@ import '../accueil/accueil.js';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Meteor } from 'meteor/meteor';
 
-Template.creation.events({
+
+/*
 'click #logNow'(event) {
   event.preventDefault();
   let nom = document.getElementById('nom').value;
@@ -29,24 +30,47 @@ Template.creation.events({
             roles: roles,
             dateInput: dateInput,
             commentaire: commentaire
+            */
+
+
+Template.creation.events({
+  'click #logNow'(event) {
+    event.preventDefault();
+    let username = document.getElementById('nom_utilisateur').value;
+    console.log(username);
+    let password = document.getElementById('mdp_conf').value;
+    console.log(password);
+    let mdpCheck = document.getElementById('inputPasswordCheck').value;
+    //  let url = document.getElementById('basic-url').value;
+    if (password.length > 4) {
+      if (password == mdpCheck) {
+        if (username.includes('@unil.ch')) {
+        if (username != '' && password != '') {
+          Accounts.createUser({
+            username: username,
+            password: password,
           },
-        },
-        (error) => {
-          if (error) {
-            alert(error.message);
-          } else {
-            setTimeout(() => FlowRouter.go('accueil'), 200);
-          }
-        });
+          (error) => {
+            if (error) {
+              alert(error.message);
+            } else {
+              console.log('votre compte est créé');
+              setTimeout(() => FlowRouter.go('accueil'), 200);
+            }
+          });
+        } else {
+          alert('Veuillez remplir tous les champs requis.');
+        }
+      }else{
+        alert('Ce site permet la création de compte uniquement avec des adresses mail du domaine unil.ch')
+      }
       } else {
-        alert('Veuillez remplir tous les champs requis.');
+        alert('Veuillez reconfirmer votre mot de passe.');
       }
     } else {
-      alert('Veuillez reconfirmer votre mot de passe.');
+      alert('Votre mot de passe est trop court! Veuillez choisir un mot de passe de minimum 5 caractères. ');
     }
-  } else {
-    alert('Votre mot de passe est trop court! Veuillez choisir un mot de passe de minimum 5 caractères. ');
-  }
-},
-
-});
+  },
+  
+  });
+  

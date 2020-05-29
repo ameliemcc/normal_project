@@ -40,7 +40,7 @@ Template.accueil.events({
   'click #logout'(event) {
     event.preventDefault();
     Meteor.logout();
-    FlowRouter.go('un');
+    FlowRouter.go('login');
   },
   'click #nvlleAnnonce'(event) {
     event.preventDefault();
