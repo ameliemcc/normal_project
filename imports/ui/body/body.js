@@ -47,11 +47,10 @@ Template.app_body.events({
     event.preventDefault();
     FlowRouter.go('plusAnnonces')
   },
-
+  
   'click #modifierProfil'(event) {
     event.preventDefault();
     FlowRouter.go('modifierProfil')
   },
-
 });
 
