@@ -92,12 +92,11 @@
   left: 13px;
 }
 #adresseEmail{
-  position: relative;
-  left: -7px;
+ float: left;
+  
 }
 #localite{
-  width: 600px;
-
+  float: left;
 }
 #anneeNaissance{
   position: relative;
@@ -106,8 +105,7 @@
 }
 #dateInput{
   position: relative;
-  top: -78px;
-  left: 122px;
+  width: 100px;
 }
 #domaineActivite{
   position: relative;

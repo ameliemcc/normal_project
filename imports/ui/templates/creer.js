@@ -40,20 +40,31 @@ Template.creation.events({
   'click #logNow'(event) {
     event.preventDefault();
     const mail = document.getElementById('mail').value;
-    console.log(mail);
     const mdp = document.getElementById('mdp').value;
-    console.log(mdp);
     const mdpCheck = document.getElementById('mdpCheck').value;
+    const nom = document.getElementById('nom').value;
+    const prenom = document.getElementById('prenom').value;
+    const localite = document.getElementById('localite').value;
+    const roles = document.getElementById('roles').value;
+    const dateInput = document.getElementById('dateInput').value;
+    const commentaire = document.getElementById('commentaire').value;
     //  let url = document.getElementById('basic-url').value;
     if (mdp.length > 4) {
       if (mdp === mdpCheck) {
         if (mail.includes('@unil.ch')) {
-          if (mail !== '' && mdp !== '') {
+          if (mail !== '' && mdp !== '' && nom !== '' && prenom !== '' && localite !== '' && dateInput !== '') {
             Accounts.createUser({
               username: mail,
               password: mdp,
+              profile: {
+                nom: nom,
+                prenom: prenom,
+                localite: localite,
+                roles: roles,
+                dateInput: dateInput,
+                commentaire: commentaire,
             },
-            (error) => {
+          },(error) => {
               if (error) {
                 alert(error.message);
               } else {
