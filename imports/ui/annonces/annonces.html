@@ -5,15 +5,20 @@
     
 <div class="contann container">
 <h4>Créer une annonce</h4>
+
+<div class="d-flex">
+  <p>Champs obligatoires <span class="text-danger">*</span></p>
+</div>
+
 <h5>Votre annonce</h5>
 <div class="line row rowformat">
   <div class="col-md-1" >
   </div>
     <form class="new-annonce"> 
       <div  class="col-md-10 cadre">
-            <label for="comment">Donnez un titre à votre annonce:</label> <br>
+            <label for="comment">Donnez un titre à votre annonce:<span class="text-danger">*</span></label> <br>
             <textarea  class="form-control" rows="1" name="title" placeholder="Titre de votre annonce"></textarea>
-            <label for="comment">Décrivez votre annonce: en quoi consiste votre projet, quels sont vos objectifs et vos motivations?</label> <br>
+            <label for="comment">Décrivez votre annonce: en quoi consiste votre projet, quels sont vos objectifs et vos motivations?<span class="text-danger">*</span></label> <br>
             <textarea class="form-control" rows="5" name="description" placeholder="Description de votre annonce"></textarea>
       </div> 
       <br>
@@ -21,7 +26,7 @@
 <div class="line row">
     <div class="col-md-3">
       <strong>Région</strong>
-      <label for="formControlRange">Dans quelle région/localité souhaitez-vous développer votre projet?</label>
+      <label for="formControlRange">Dans quelle région/localité souhaitez-vous développer votre projet?<span class="text-danger">*</span></label>
       <input type="text" class="form-control-range" name="region" placeholder="Région">
     </div>
  
@@ -42,7 +47,7 @@
 
 </div> 
 <br>
-<strong>Votre adresse email de contact : </strong> 
+<strong>Votre adresse email de contact :<span class="text-danger">*</span> </strong> 
 <input type="text" name="email" placeholder="prénom.nom@unil.ch">
 <br>
 <input id='publier' class="butclassann" type="submit" value="Publier">      

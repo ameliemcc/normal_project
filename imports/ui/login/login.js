@@ -1,6 +1,4 @@
 import './login.html';
-import { Accounts } from 'meteor/accounts-base';
-import { ReactiveVar } from 'meteor/reactive-var';
 import { Meteor } from 'meteor/meteor';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Template } from 'meteor/templating';

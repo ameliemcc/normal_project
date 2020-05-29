@@ -7,35 +7,6 @@ import { Template } from 'meteor/templating';
 import { Accounts } from 'meteor/accounts-base';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
-/*
-'click #logNow'(event) {
-  event.preventDefault();
-  let nom = document.getElementById('nom').value;
-  let prenom = document.getElementById('prenom').value;
-  let email = document.getElementById('inputEmail4').value;
-  let mdp = document.getElementById('inputPassword4').value;
-  let mdpCheck = document.getElementById('inputPasswordCheck').value;
-  let localite = document.getElementById('localite').value;
-  let roles = document.getElementById('roles').value;
-  let dateInput = document.getElementById('dateInput').value;
-  let commentaire = document.getElementById('commentaire').value;
-  //  let url = document.getElementById('basic-url').value;
-  if (mdp.length > 4) {
-    if (mdp == mdpCheck) {
-      if (email != '' && mdp != '' && nom != '' && prenom != '') {
-        Accounts.createUser({
-          username: email,
-          password: mdp,
-          profile: {
-            nom: nom,
-            prenom: prenom,
-            localite: localite,
-            roles: roles,
-            dateInput: dateInput,
-            commentaire: commentaire
-            */
-
-
 Template.creation.events({
   'click #logNow'(event) {
     event.preventDefault();
@@ -80,7 +51,7 @@ Template.creation.events({
             alert('Veuillez remplir tous les champs requis.');
           }
         } else {
-          alert('Ce site permet la création de compte uniquement avec des adresses mail du domaine unil.ch');
+          alert('Ce site permet la création de compte uniquement avec des adresses email de l\'UNIL ');
         }
       } else {
         alert('Veuillez reconfirmer votre mot de passe.');

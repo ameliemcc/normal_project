@@ -36,6 +36,7 @@ Template.app_body.events({
   'click #logout'(event) {
     event.preventDefault();
     Meteor.logout();
+    FlowRouter.go('login');
   },
   
   'click #nvlleAnnonce'(event) {

@@ -18,7 +18,7 @@ Template.annonces.events({
     const roleVal = event.target.role.value;
     const emailVal = event.target.email.value;
     // Insert a task into the collection
-    if (titreVal !== '' && DescriptionlVal !== '' && regionVal !== '' && partVal !== '' && roleVal !== '' && emailVal !== '') {
+    if (titreVal !== '' && DescriptionlVal !== '' && regionVal !== '' && emailVal !== '') {
       Annonces.insert({
         title: titreVal,
         description: DescriptionlVal,
