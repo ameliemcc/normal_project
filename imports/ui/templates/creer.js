@@ -2,7 +2,9 @@ import './creer.html';
 import '../accueil/accueil.js';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Meteor } from 'meteor/meteor';
-
+import { Template } from 'meteor/templating';
+import { Accounts } from 'meteor/accounts-base';
+import { FlowRouter } from 'meteor/kadira:flow-router';
 
 /*
 'click #logNow'(event) {
@@ -43,9 +45,9 @@ Template.creation.events({
     let mdpCheck = document.getElementById('inputPasswordCheck').value;
     //  let url = document.getElementById('basic-url').value;
     if (password.length > 4) {
-      if (password == mdpCheck) {
+      if (password === mdpCheck) {
         if (username.includes('@unil.ch')) {
-        if (username != '' && password != '') {
+        if (username !== '' && password !== '') {
           Accounts.createUser({
             username: username,
             password: password,

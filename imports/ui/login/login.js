@@ -17,10 +17,10 @@ Template.login.events({
     let password = document.getElementById('mdp_conf').value;
     console.log(password);
     Meteor.loginWithPassword(username, password, (error) => {
-      if (error){
+      if (error) {
         alert(error.message);
-      }else{
-        console.log("connecté");
+      } else {
+        console.log('connecté');
         setTimeout(() => FlowRouter.go('accueil'), 200);
       }
     });
