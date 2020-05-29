@@ -1,4 +1,5 @@
 import './creer.html';
+// eslint-disable-next-line import/no-cycle
 import '../accueil/accueil.js';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Meteor } from 'meteor/meteor';
@@ -38,36 +39,36 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 Template.creation.events({
   'click #logNow'(event) {
     event.preventDefault();
-    let mail = document.getElementById('mail').value;
+    const mail = document.getElementById('mail').value;
     console.log(mail);
-    let mdp = document.getElementById('mdp').value;
+    const mdp = document.getElementById('mdp').value;
     console.log(mdp);
-    let mdpCheck = document.getElementById('mdpCheck').value;
+    const mdpCheck = document.getElementById('mdpCheck').value;
     //  let url = document.getElementById('basic-url').value;
     if (mdp.length > 4) {
       if (mdp === mdpCheck) {
         if (mail.includes('@unil.ch')) {
-        if (mail !== '' && mdp !== '') {
-          Accounts.createUser({
-            username: mail,
-            password: mdp,
-          },
-          (error) => {
-            if (error) {
-              alert(error.message);
-            } else {
-              console.log('votre compte est créé');
-              let idU =  Meteor.userId();
-              console.log(idU);
-              setTimeout(() => FlowRouter.go('accueil'), 200);
-            }
-          });
+          if (mail !== '' && mdp !== '') {
+            Accounts.createUser({
+              username: mail,
+              password: mdp,
+            },
+            (error) => {
+              if (error) {
+                alert(error.message);
+              } else {
+                console.log('votre compte est créé');
+                const idU = Meteor.userId();
+                console.log(idU);
+                setTimeout(() => FlowRouter.go('accueil'), 200);
+              }
+            });
+          } else {
+            alert('Veuillez remplir tous les champs requis.');
+          }
         } else {
-          alert('Veuillez remplir tous les champs requis.');
+          alert('Ce site permet la création de compte uniquement avec des adresses mail du domaine unil.ch');
         }
-      }else{
-        alert('Ce site permet la création de compte uniquement avec des adresses mail du domaine unil.ch')
-      }
       } else {
         alert('Veuillez reconfirmer votre mot de passe.');
       }
@@ -75,6 +76,5 @@ Template.creation.events({
       alert('Votre mot de passe est trop court! Veuillez choisir un mot de passe de minimum 5 caractères. ');
     }
   },
-  
-  });
-  
+
+});

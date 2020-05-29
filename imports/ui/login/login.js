@@ -16,13 +16,13 @@ Template.login.events({
     console.log(mail);
     const mdp = document.getElementById('mdp').value;
     console.log(mdp);
-    Meteor.loginWithPassword(mail, mdp, (error) => {
+    Meteor.loginWithPassword({ username: mail }, mdp, (error) => {
       if (error) {
         alert(error.message);
-        let idU =  Meteor.userId();
+        const idU = Meteor.userId();
         console.log(idU);
       } else {
-        let idU =  Meteor.userId();
+        const idU = Meteor.userId();
         console.log(idU);
         setTimeout(() => FlowRouter.go('accueil'), 200);
       }
