@@ -10,6 +10,8 @@ import '../body/body.js';
 import '../templates/nouvmembres.html';
 import '../templates/accannonce_grid.html';
 import '../templates/accprofils_grid.html';
+import '../templates/accprofils_grid.js';
+import '../templates/accannonce_grid.js';
 
 
 Template.accueil.helpers({
