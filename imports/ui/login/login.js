@@ -12,15 +12,18 @@ Template.login.events({
   },
   'click #connect'(event) {
     event.preventDefault();
-    let username = document.getElementById('nom_utilisateur').value;
-    console.log(username);
-    let password = document.getElementById('mdp_conf').value;
-    console.log(password);
-    Meteor.loginWithPassword(username, password, (error) => {
+    const mail = document.getElementById('mail').value;
+    console.log(mail);
+    const mdp = document.getElementById('mdp').value;
+    console.log(mdp);
+    Meteor.loginWithPassword(mail, mdp, (error) => {
       if (error) {
         alert(error.message);
+        let idU =  Meteor.userId();
+        console.log(idU);
       } else {
-        console.log('connecté');
+        let idU =  Meteor.userId();
+        console.log(idU);
         setTimeout(() => FlowRouter.go('accueil'), 200);
       }
     });

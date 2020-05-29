@@ -38,25 +38,27 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 Template.creation.events({
   'click #logNow'(event) {
     event.preventDefault();
-    let username = document.getElementById('nom_utilisateur').value;
-    console.log(username);
-    let password = document.getElementById('mdp_conf').value;
-    console.log(password);
-    let mdpCheck = document.getElementById('inputPasswordCheck').value;
+    let mail = document.getElementById('mail').value;
+    console.log(mail);
+    let mdp = document.getElementById('mdp').value;
+    console.log(mdp);
+    let mdpCheck = document.getElementById('mdpCheck').value;
     //  let url = document.getElementById('basic-url').value;
-    if (password.length > 4) {
-      if (password === mdpCheck) {
-        if (username.includes('@unil.ch')) {
-        if (username !== '' && password !== '') {
+    if (mdp.length > 4) {
+      if (mdp === mdpCheck) {
+        if (mail.includes('@unil.ch')) {
+        if (mail !== '' && mdp !== '') {
           Accounts.createUser({
-            username: username,
-            password: password,
+            username: mail,
+            password: mdp,
           },
           (error) => {
             if (error) {
               alert(error.message);
             } else {
               console.log('votre compte est créé');
+              let idU =  Meteor.userId();
+              console.log(idU);
               setTimeout(() => FlowRouter.go('accueil'), 200);
             }
           });
