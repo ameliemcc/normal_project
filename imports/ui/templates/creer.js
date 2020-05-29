@@ -57,18 +57,18 @@ Template.creation.events({
               username: mail,
               password: mdp,
               profile: {
-                nom: nom,
-                prenom: prenom,
-                localite: localite,
-                roles: roles,
-                dateInput: dateInput,
-                commentaire: commentaire,
-            },
-          },(error) => {
+                nom,
+                prenom,
+                localite,
+                roles,
+                dateInput,
+                commentaire,
+              },
+            }, (error) => {
               if (error) {
                 alert(error.message);
               } else {
-                console.log('votre compte est créé');
+                alert('votre compte est créé');
                 const idU = Meteor.userId();
                 console.log(idU);
                 setTimeout(() => FlowRouter.go('accueil'), 200);
