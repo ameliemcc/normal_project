@@ -4,18 +4,17 @@ cette valeur doit être comparée aux valeurs dans la base de données.
 Ensuite, seules les valeurs qui sont égales aux valeurs entrées doivent s'afficher. */
 
 import { Index, MinimongoEngine } from 'meteor/easy:search';
-import { Annonces } from '../../api/annonces.js';
+import { Meteor } from 'meteor/meteor';
 
-const listeAnn = Annonces;
+const mem = Meteor.users;
 
-const listAnnIndex = new Index({
-  collection: listeAnn,
-  fields: ['name', 'score'],
+const memIndex = new Index({
+  collection: mem,
+  fields: ['username', 'profile'],
   engine: new MinimongoEngine(),
 });
 
 Tracker.autorun(function () {
-  const cursor = listAnnIndex.search('Marie');
-  console.log(cursor.fetch());
-  console.log(cursor.count());
+  const cursor = listAnnIndex.search('ggg');
+  console.log(listAnnIndex.search('ggg')
 });
