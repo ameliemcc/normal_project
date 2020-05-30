@@ -19,4 +19,17 @@ Template.favoris.helpers({
     return Meteor.users.profile;
   },
 
+  favannonces () {
+
+    let annonces_favorites = Meteor.user().profile.fav_annonce;
+    alert(annonces_favorites);
+    let tabfavann = [];
+    annonces_favorites.forEach(element => {tabfavann.push(Annonces.findOne({_id: element}))
+    });
+
+    return tabfavann;
+  }
+  
+
+  
 });

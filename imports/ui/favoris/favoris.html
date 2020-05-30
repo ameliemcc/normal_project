@@ -13,14 +13,22 @@ Affichage des favoris (membres et annonces)-->
 
     <!--Start definition section Annonces-->
     <box id="annoncesEtProfils">
-        <div class="contann container">     
+
+        <!--<div class="contann container">     
             <h4>Annonces</h4>
            {{#each annonces}}
                 {{>publication}}
-            {{/each}}                
+            {{/each}}            
               
-        </div>
+        </div>-->
         
+        <div class="contann container">
+            {{#each favannonces}}
+                {{> publication}}
+            {{/each}}
+        
+        </div>
+
     <!--Start definition section Profils-->
         <div class="contann container">
             <h4>Profils</h4>
