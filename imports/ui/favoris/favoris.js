@@ -22,7 +22,6 @@ Template.favoris.helpers({
   favannonces () {
 
     let annonces_favorites = Meteor.user().profile.fav_annonce;
-    alert(annonces_favorites);
     let tabfavann = [];
     annonces_favorites.forEach(element => {tabfavann.push(Annonces.findOne({_id: element}))
     });
@@ -33,7 +32,6 @@ Template.favoris.helpers({
   favorusers () {
 
     let personnes_favorites = Meteor.user().profile.fav_personne;
-    alert(personnes_favorites);
     let tabfavpers = [];
     personnes_favorites.forEach(element1 => {tabfavpers.push(Meteor.users.findOne({_id: element1}))
     });
