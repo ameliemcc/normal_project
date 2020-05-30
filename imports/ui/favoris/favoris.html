@@ -34,10 +34,12 @@ Affichage des favoris (membres et annonces)-->
             <h4>Profils</h4>
             
             <div class="line row">
-                {{#each utilisateurs}}
+            <!--    {{#each utilisateurs}}
                         {{> nomprof}}
-                {{/each}}
-                
+                {{/each}}-->
+            {{#each favorusers}}
+                {{> nomprof}}
+            {{/each}}
             </div>
         </div>  
     </box>

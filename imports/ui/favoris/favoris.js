@@ -28,8 +28,17 @@ Template.favoris.helpers({
     });
 
     return tabfavann;
-  }
+  },
   
+  favorusers () {
 
+    let personnes_favorites = Meteor.user().profile.fav_personne;
+    alert(personnes_favorites);
+    let tabfavpers = [];
+    personnes_favorites.forEach(element1 => {tabfavpers.push(Meteor.users.findOne({_id: element1}))
+    });
+
+    return tabfavpers;
+  }
   
 });
