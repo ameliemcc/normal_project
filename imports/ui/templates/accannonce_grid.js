@@ -4,8 +4,7 @@ import './accannonce_grid.html';
 
 Template.newann.events({
   'click .ajoutay1'() {
-    let profcur = this._id;
-    let currmemb = Meteor.userId();
+    
     
     Meteor.users.update(
         {_id: Meteor.userId() },
